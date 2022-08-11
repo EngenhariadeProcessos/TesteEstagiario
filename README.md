@@ -45,5 +45,5 @@ git commit -m 'Execise Finished'
 git push origin develop
 ```
 
-4. No **Github** crie um `Pull request` com a `main`
+4. No **Github** crie um `Pull request` com a `main` do seu Fork, preste atenção para isso.  
 ****
