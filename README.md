@@ -31,7 +31,7 @@ Nesta etapa do processo seletivo de novos estagiários criamos este repositório
 
 ## Comandos básicos do GIT
 
-1. Crie uma branch `develop` e realize as modificações que deseja. 
+1. Crie uma branch `develop` e realize as modificações descritas acima. 
 ```bash
 git checkout -b develop
 ```
