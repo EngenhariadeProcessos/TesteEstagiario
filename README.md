@@ -10,7 +10,8 @@ Nesta etapa do processo seletivo de novos estagiários criamos este repositório
   - Baixar o repositório em sua máquina; 
   - Abrir em sua `IDE`;
   - Crie uma nova branch chamada `develop`; 
-  - Quando concluir a tarefa é necessário um `merge` com a `main`, executar um `push` com suas alterações;  
+  - Executar um `commit/push` com suas alterações;  
+  - Executar um `merge` com a `main` criando `Pull request` no GitHub;
 
 - **HTML**<br> 
   Criar uma página que deve conter um formulário com os seguintes campos: 
@@ -48,4 +49,5 @@ git push origin develop
 4. No **Github** crie um `Pull request` com a `main` do seu Fork, preste atenção para isso.  
 
 5. Envie o link do seu Fork.
+   [Formulario](http://sig.grafjb.com.br/__eng_de_processo/estagiario/) 
 ****
