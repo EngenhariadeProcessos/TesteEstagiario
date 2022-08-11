@@ -8,8 +8,9 @@ Nesta etapa do processo seletivo de novos estagiários criamos este repositório
   - Necessário ter uma conta no GitHub;
   - Fazer um `fork` no GitHub;
   - Baixar o repositório em sua máquina; 
-  - Não é necessário criar uma nova branch, mas se criar deve efetuar um `merge` com a `main`; 
-  - Quando concluir a tarefa é necessário executar um `push`com suas alterações;  
+  - Abrir em sua `IDE`;
+  - Crie uma nova branch chamada `develop`; 
+  - Quando concluir a tarefa é necessário um `merge` com a `main`, executar um `push` com suas alterações;  
 
 - **HTML**<br> 
   Criar uma página que deve conter um formulário com os seguintes campos: 
@@ -27,4 +28,22 @@ Nesta etapa do processo seletivo de novos estagiários criamos este repositório
 
 - Você pode utilizar Bootstrap, jQuery ou qualquer outra biblioteca de sua preferência. 
 - Saber pesquisar e encontrar soluções e válido mas tenha a documentação oficial como sua aliada, utilize estes sites de preferencia como referência: [MDN Web Docs](https://developer.mozilla.org/pt-BR/) é [W3Schools OnlineWeb Tutorials](https://www.w3schools.com/)
+
+## Comandos básicos do GIT
+
+1. Crie uma branch `develop` e realize as modificações que deseja. 
+```bash
+git checkout -b develop
+```
+2. Faça o Commit. 
+```bash
+git commit -m 'Execise Finished'
+```
+3. Realize o Push da Branch. 
+
+```bash
+git push origin develop
+```
+
+4. No **Github** crie um `Pull request` com  a main
 ****
