@@ -6,7 +6,7 @@ Nesta etapa do processo seletivo de novos estagiários criamos este repositório
 
 - **Git / Github**<br>
   - Necessário ter uma conta no GitHub;
-  - Fazer um `fork` no GitHub;
+  - Fazer um `Fork` no GitHub;
   - Baixar o repositório em sua máquina; 
   - Abrir em sua `IDE`;
   - Crie uma nova branch chamada `develop`; 
@@ -46,4 +46,6 @@ git push origin develop
 ```
 
 4. No **Github** crie um `Pull request` com a `main` do seu Fork, preste atenção para isso.  
+
+5. Envie o link do seu Fork.
 ****
