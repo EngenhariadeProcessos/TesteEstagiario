@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Formulário</title>
+</head>
+<body>
+  <div class="card-ui">
+    <form>
+      <label class="rotulo-form">Nome: <span class="required">*</span> </label>
+      <input class="input-form" id="input-nome" placeholder="Nome" required="required">
+      <label class="rotulo-form">E-mail: <span class="required">*</span> </label>
+      <input class="input-form" id="input-email" type="email" placeholder="email@adress.com" required="required">
+     
+      <label class="rotulo-form" for="phone">Telefone <span class="required">*</span></label>
+      <input class="input-form" id="input-telefone" type="text" class="form-control"  name="phone" placeholder="(99)99999-9999" pattern="(\([0-9]{2}\))([9]{1})?([0-9]{5})-([0-9]{4})" title="Número de telefone precisa ser no formato (99)99999-9999" required="required" />
+      <button class="bnt" type="submit">Enviar
+        <a></a>
+      </button>
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
+
