@@ -1,4 +1,4 @@
-# Desafio TesteEstagiario
+# Desafio Teste Estagiario
 Repositório de teste para novos estagiários 
 
 
@@ -21,14 +21,14 @@ Nesta etapa do processo seletivo de novos estagiários criamos este repositório
 
 - **JavaScript**<br>
   - Definir uma validação para os campos não permitindo enviar com os valores em branco;   
-  - Após clicar no botão enviar, os valores dos campos devem ser passados para um objeto do `JS` é este deve ser exibido no console do browser;
-  - Após o clicar no botão enviar, ocultar o formulário e exibir a mensagem: **`Obrigado por seu cadastro!`**
+  - Após clicar no botão enviar, os valores dos campos devem ser passados para um objeto do `JS`, é este deve ser exibido no console do browser;
+  - Após clicar no botão enviar, ocultar o formulário e exibir a mensagem: **`Obrigado por seu cadastro!`**
   - Utilizar somente o arquivo `index.js` para adicionar todo o código `JS`;
 
 ## Dicas Importantes 
 
 - Você pode utilizar Bootstrap, jQuery ou qualquer outra biblioteca de sua preferência. 
-- Saber pesquisar e encontrar soluções e válido mas tenha a documentação oficial como sua aliada, utilize estes sites de preferencia como referência: [MDN Web Docs](https://developer.mozilla.org/pt-BR/) é [W3Schools OnlineWeb Tutorials](https://www.w3schools.com/)
+- Saber pesquisar e encontrar soluções é válido, mas tenha a documentação oficial como sua aliada, utilize estes sites de preferência como referência: [MDN Web Docs](https://developer.mozilla.org/pt-BR/) é [W3Schools OnlineWeb Tutorials](https://www.w3schools.com/)
 
 ## Comandos básicos do GIT
 
