@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>processo seletivo(estagio)</title>
+</head>
+
+<body>
+
+    <! -- centralizando e estilizando o formulario -->
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #242933;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            border: 0;
+            height: 100%;
+        }
+
+        .container{
+            background: #242933;
+            border-radius: 5px;
+            border: 2px solid #3E4458;
+            width: 450px;
+            max-width: 100%;
+        }
+        .form {
+            display: block;;
+            width: 600px;
+            margin: auto;
+        }
+
+        .form-group{
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .form-group label{
+           color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+      
+        .enviado {
+            color: white;
+            text-align: center;
+        }
+
+        .errorInput{
+            border: 2px solid red !important;
+        }
+
+        .autor{
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+            position: absolute; 
+            bottom: 0;
+        }
+
+        .autor p {
+            color: white;
+        }
+    </style>
+
+    <div class="container">
+        <div>
+            <h1>Formulário</h1>
+
+            <form id="form" action="#">
+                <! -- coletar o nome -->
+
+                <div class="form-group col-md-12">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                    <small class="error"></small>
+                </div>
+                
+                <! -- coletar o email -->
+                
+                <div class="form-group col-md-12">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu Email">
+                </div>
+
+                <! -- coletar o telefone -->
+                <div class="form-group col-md-12">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
+                </div>
+
+                <! -- Botão de enviar -->
+                <div class="form-group col-md-12" id="bt">
+                    <button id="btForm" type="submit" class="btn btn-primary" >Enviar</button>
+                </div>
+            </form>
+       </div>
+        <! -- Messagem de Envio do formulário -->
+        <div id="mensagemconfirm" class="enviado"></div>
+        <p id="captado"> </p>
+    </div>
+    <footer class="autor">
+        <P>desenvolvido por: Walter Filho</P>
+    </footer>
+</body>
+<script type="text/javascript">
+
+    // validação dos campos do formulário// 
+
+    const btEnviar = document.getElementById('btForm');
+   
+    btEnviar.addEventListener('click', (e) => {
+        e.preventDefault()
+
+        const nomeForm = document.getElementById('nome')
+        const emailForm = document.getElementById('email')
+        const telefoneForm = document.getElementById('telefone')
+
+        if(nomeForm.value == ''){
+           nomeForm.classList.add("errorInput")
+        } 
+        else if(emailForm.value == ''){
+           emailForm.classList.add("errorInput")
+        } 
+        else if(telefoneForm.value == ''){
+           telefoneForm.classList.add("errorInput")
+        }
+         //ocultar formulario após envio e exibir confirmação de envio de mensagem//
+        else{
+            var formItself = document.getElementById('form');
+            formItself.style.display = 'none';
+            var confirmado = document.getElementById('mensagemconfirm').innerHTML = 'Obrigado por seu cadastro!';}
+        
+        console.log(nomeForm.value);
+        console.log(emailForm.value);
+        console.log(telefoneForm.value);
+    
+    })
+    
+
+ 
+</script>
+</html>
