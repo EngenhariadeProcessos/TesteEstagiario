@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <title>Formulário</title>
+
+    <style>
+        body {
+            height: 150vh;
+            background: linear-gradient(45deg, #000000,#000102, #070809, #305662, #06d1e8, #032324);
+            font-family:'Poppins';
+        }
+        .container {
+            display:none;
+        }
+        .conteudo__container {
+            background-color: #fff;
+            border-radius: 1em;
+        }
+        .header__container {
+            padding: .2em 2em;
+            background-color: #1771AC;
+            border-radius: 1em 1em 0 0;
+            color: #fff;
+            font-size: 14px;
+        }
+        .formulario__input {
+            padding: .8em;
+            border: 2px solid #093A72;
+            border-radius: 10px;
+            width: 70%;
+            margin: 1em 1em;
+        }
+        .formulario__input::placeholder {
+            color: #093A72;
+            font-family:'Poppins';
+        }
+        .formulario__lista {
+            list-style: none;
+        }
+        .formulario__botao {
+            width: 70%;
+            background-color: #000000;
+            color: rgb(239, 196, 196);
+            border: 1px solid #fff;
+            margin: 1em 2em;
+            padding: .5em;
+            border-radius: .3em;
+            font-family:'Poppins';
+        }
+        .formulario__botao:hover {
+            background-color: transparent;
+            border: 2px solid #000000;
+            color: #000000;
+            font-weight: bold;
+        }
+        .formulario__botao:active {
+            background-color: #000000;
+            color: #fff;
+            border: none;
+        }
+        .errorMensagem {
+            color: rgb(255, 0, 0);
+            font-size: 18px;
+            font-weight: bold;
+            padding: .2em 0 0 2em;
+            font-size: 16px;
+            display: block;
+        }
+        .mensagem {
+            display: none;
+        }
+        .container-desativo {
+            display: block;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mensagem__container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mensagem__cadastro {
+            display: block;
+            background: color rgba(1, 0, 10, 0.667);
+            color: #fff;
+            padding: 1em;
+            font-size: 20px;
+            border-radius: 1em;
+        }
+        .mensagem__cadastro-ativo {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="container container-desativo">
+        <div class="conteudo__container">
+            <div class="header__container">
+                <h2>
+                    Olá...<br> Preencha o formulário abaixo:
+                </h2>
+            </div>
+                
+            <div class="errorMensagem mensagem">
+                *Preencha todos os campos obrigatórios!
+            </div>
+
+            <form class="formulario">
+                <ul class="formulario__lista">
+                    <li class="item__lista">
+                        <input type="text" name="nome" class="formulario__input input-nome" placeholder="Digite seu nome...">
+                    </li>
+                    <li class="item__lista">
+                        <input type="email" name="email" class="formulario__input input-email" placeholder="Digite seu email...">
+                    </li>
+                    <li class="item__lista">
+                        <input type="tel" name="telefone" class="formulario__input input-telefone" placeholder="(xx) xxxxx-xxxx">
+                    </li>
+                    <li class="item__lista">
+                        <input type="submit" name="botao" class="formulario__botao">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+
+    <section class="mensagem__container">
+        <div class="mensagem__cadastro mensagem__cadastro-ativo">
+            Obrigado pelo seu cadastro!
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
