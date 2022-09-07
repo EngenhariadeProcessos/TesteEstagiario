@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <form action="" id="form" method="POST">
+                <fieldset>
+                    <legend>Cadastro</legend>
+
+                    <div class="inputs_container">
+                        <label for="nome">Nome:</label>
+                        <input type="text" pattern="[a-zA-Zç]" name="nome" id="nome" placeholder="Digite seu nome..." onchange="validation()">
+                    </div>
+
+                    <div class="inputs_container">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail..." onchange="validation()">
+                    </div>
+
+                    <div class="inputs_container">
+                        <label for="telefone">Telefone:</label>
+                        <input type="number" name="telefone" id="telefone" placeholder="Digite seu telefone..." onchange="validation()">
+                    </div>
+                
+                    <button type="submit" id="submit_button" onclick="formOff()" disabled>Cadastrar</button>
+                    <p>Preencha todos os campos corretamente.</p>
+                </fieldset>
+            </form>
+            <div id="submit_mensage">
+                <p>Obrigado por seu cadastro!</p>
+            </div>
+        </main>
+        <script src="./index.js"></script>
+    </body>
+</html>
