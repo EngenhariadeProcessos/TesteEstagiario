@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formlário</title>
+  </head>
+  <body>
+    <form>
+      <h1 style="color: rgb(247, 243, 243)">Formulário</h1>
+
+      <p>
+        <label for="name"></label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="digite seu nome.."
+        />
+      </p>
+      <p>
+        <label for="email"></label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="digite seu email.."
+        />
+      </p>
+      <p>
+        <label for="number"></label>
+        <input
+          type="text"
+          name="number"
+          id="number"
+          placeholder="digite seu numero.."
+        />
+      </p>
+
+      <button onclick="show(); return false">Enviar.</button>
+    </form>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
