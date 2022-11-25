@@ -8,6 +8,7 @@ function formValidation() {
     } else {
         getFormValues(nome, email, telefone);
         hideForm();
+        showSucessMessage();
     }
 }
 
@@ -23,8 +24,12 @@ function Pessoa(nome, email, telefone){
 }
 
 function hideForm(){
-    let form = document.getElementById("formulario");
-    form.style.display = "none";
+    document.getElementById("area-cadastro").style.display = "none";
+    document.getElementById("resetar").style.display = "block";
+}
+
+function showSucessMessage(){
+    document.getElementById("titulo").innerText = "Obrigado por seu cadastro!"
 }
 
 
