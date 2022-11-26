@@ -4,23 +4,10 @@ const nomeInput = document.getElementById("nome");
 const mailInput = document.getElementById("email");
 const telefoneInput = document.getElementById("telefone");
 const enviarBtn = document.querySelector("button");
-
-// Validação dos campos
-nomeInput.setAttribute("minlength", "3");
-nomeInput.setAttribute("maxlength", "20");
-nomeInput.required = true;
-
-// regex aceita domínios sem extensão
-const formatoEmail = "^[A-Za-z0-9-.]+@([a-z]+.)+[a-z]{2,4}$";
-mailInput.setAttribute("pattern", formatoEmail);
-mailInput.required = true;
-
-telefoneInput.setAttribute("minlength", "8");
-telefoneInput.setAttribute("maxlength", "11");
-telefoneInput.required = true;
+const inputs = [nomeInput, mailInput, telefoneInput];
 
 // Objeto que armazena os dados
-const formulario = () => {
+const dadosFormulario = () => {
   nome = nomeInput.value;
   email = mailInput.value;
   telefone = telefoneInput.value;
@@ -32,17 +19,6 @@ const formulario = () => {
 };
 
 // funções
-let inputs = document.querySelectorAll("input");
-const checarValido = () => {
-  for (let input of inputs) {
-    if (!input.validity.valid) {
-      input.reportValidity();
-      return false;
-    }
-  }
-  return true;
-};
-
 const ocultarFormulario = () => {
   formularioEle.style.visibility = "hidden";
 };
@@ -54,19 +30,37 @@ const mostrarAgradecimento = () => {
   formularioEle.parentNode.appendChild(mensagemDiv);
 };
 
-// Eventos
-inputs.forEach((input) =>
-  input.addEventListener("input", () => {
-    if (!input.validity.valid) input.reportValidity();
-  })
-);
+const checarVazios = () => {
+  for (var input of inputs) {
+    if (input.value === "")
+      return { index: inputs.indexOf(input), validade: false };
+  }
+  return { validade: true };
+};
 
-enviarBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (checarValido()) {
-    const dados = formulario();
-    dados.mostrarDados();
+const mensagemErro = document.createElement("p");
+const erroConteiner = document.createElement("div");
+mensagemErro.classList.add('erro-msg')
+enviarBtn.previousElementSibling.appendChild(erroConteiner);
+erroConteiner.appendChild(mensagemErro);
+const mandarErro = () => {
+  const vazio = inputs[checarVazios().index];
+  const texto = vazio.id.charAt(0).toUpperCase() + vazio.id.slice(1);
+  mensagemErro.textContent = `${texto} está vazio.`;
+};
+
+// Eventos
+const formu = document.forms["formulario"];
+formu.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+  checarVazios();
+  let status = checarVazios().validade;
+  if (!status) {
+    mandarErro();
+  } else {
+    const dados = dadosFormulario();
     ocultarFormulario();
     mostrarAgradecimento();
+    dados.mostrarDados();
   }
 });

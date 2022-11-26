@@ -9,6 +9,7 @@
     <style>
       * {
         box-sizing: border-box;
+        margin: 0;
       }
       html {
         display: grid;
@@ -16,15 +17,13 @@
         height: 100vh;
       }
       form {
-        display: grid;
-        place-items: center;
         border: 1px solid #000;
         border-radius: 8px;
         padding: 10px;
         width: 220px;
-        height: 280px;
+        height: 350px;
         border: 2px solid;
-        background-color: #e0dee0;
+        background-color: #fff;
       }
       label {
         font-weight: 600;
@@ -38,67 +37,63 @@
         margin: 0;
         padding: 0;
       }
-      input {
-        border-radius: 5px;
-      }
-      input:valid {
-        border: 3px solid #07ec07;
-      }
-      input:invalid {
+      [valido="false"] {
         border: 3px solid #f00;
+      }
+      form,
+      .agradecimento {
+        display: grid;
+        place-items: center;
       }
       .agradecimento {
         position: absolute;
         top: 50%;
-        display: grid;
-        place-items: center;
         border: 1px solid #000;
         border-radius: 5px;
         height: 50px;
         padding: 10px;
       }
-      .obrigatorio {
-        font-weight: 700;
-        font-size: 0.8rem;
+      .erro-msg {
+        color: #f00;
       }
     </style>
   </head>
   <body>
-    <form action="" method="post">
-      <h3>Realize seu cadastro</h3>
+    <form action="" method="post" id="formulario" target="">
+      <h3>Cadastre-se</h3>
       <ul class="wrapper">
         <li>
-          <label for="nome">Nome: <span class="obrigatorio" >*</span></label>
+          <label for="nome">Nome: *</label>
           <input
             type="text"
             name="nome"
             id="nome"
-            placeholder="João"
-            autocomplete="off"
+            placeholder="Insira seu nome"
           />
         </li>
 
         <li>
-          <label for="email">Email: <span class="obrigatorio">*</span></label>
+          <label for="email">Email: *</label>
           <input
             type="text"
             name="email"
             id="email"
             placeholder="seu-email@email.com"
-            autocomplete="off"
+            pattern="^[A-Za-z0-9-.! #$%&'*+=? ^_`{|}~-]+@([a-z]+.)+[a-z]{2,4}$"
           />
         </li>
 
         <li>
           <label for="telefone" erro
-            >Telefone: <span class="obrigatorio">*</span></label
+            >Telefone: *</label
           >
           <input
             type="tel"
             name="telefone"
             id="telefone"
             placeholder="Insira seu telefone"
-            autocomplete="off"
+            maxlength="11"
+            pattern="[0-9]{8,11}"
           />
         </li>
       </ul>
