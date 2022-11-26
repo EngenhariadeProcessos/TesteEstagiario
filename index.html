@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <script src="index.js" defer></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      html {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+      form {
+        border: 1px solid #000;
+        border-radius: 8px;
+        padding: 10px;
+        width: 220px;
+        height: 350px;
+        border: 2px solid;
+        background-color: #fff;
+      }
+      label {
+        font-weight: 600;
+      }
+      button {
+        margin-top: 10px;
+        width: 30%;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      [valido="false"] {
+        border: 3px solid #f00;
+      }
+      form,
+      .agradecimento {
+        display: grid;
+        place-items: center;
+      }
+      .agradecimento {
+        position: absolute;
+        top: 50%;
+        border: 1px solid #000;
+        border-radius: 5px;
+        height: 50px;
+        padding: 10px;
+      }
+      .erro-msg {
+        color: #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="post" id="formulario" target="">
+      <h3>Cadastre-se</h3>
+      <ul class="wrapper">
+        <li>
+          <label for="nome">Nome: *</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Insira seu nome"
+          />
+        </li>
+
+        <li>
+          <label for="email">Email: *</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="seu-email@email.com"
+            pattern="^[A-Za-z0-9-.! #$%&'*+=? ^_`{|}~-]+@([a-z]+.)+[a-z]{2,4}$"
+          />
+        </li>
+
+        <li>
+          <label for="telefone" erro
+            >Telefone: *</label
+          >
+          <input
+            type="tel"
+            name="telefone"
+            id="telefone"
+            placeholder="Insira seu telefone"
+            maxlength="11"
+            pattern="[0-9]{8,11}"
+          />
+        </li>
+      </ul>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
