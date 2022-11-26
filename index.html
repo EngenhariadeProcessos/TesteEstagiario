@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <script src="index.js" defer></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+      form {
+        display: grid;
+        place-items: center;
+        border: 1px solid #000;
+        border-radius: 8px;
+        padding: 10px;
+        width: 220px;
+        height: 280px;
+        border: 2px solid;
+        background-color: #e0dee0;
+      }
+      label {
+        font-weight: 600;
+      }
+      button {
+        margin-top: 10px;
+        width: 30%;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      input {
+        border-radius: 5px;
+      }
+      input:valid {
+        border: 3px solid #07ec07;
+      }
+      input:invalid {
+        border: 3px solid #f00;
+      }
+      .agradecimento {
+        position: absolute;
+        top: 50%;
+        display: grid;
+        place-items: center;
+        border: 1px solid #000;
+        border-radius: 5px;
+        height: 50px;
+        padding: 10px;
+      }
+      .obrigatorio {
+        font-weight: 700;
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="post">
+      <h3>Realize seu cadastro</h3>
+      <ul class="wrapper">
+        <li>
+          <label for="nome">Nome: <span class="obrigatorio" >*</span></label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="João"
+            autocomplete="off"
+          />
+        </li>
+
+        <li>
+          <label for="email">Email: <span class="obrigatorio">*</span></label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="seu-email@email.com"
+            autocomplete="off"
+          />
+        </li>
+
+        <li>
+          <label for="telefone" erro
+            >Telefone: <span class="obrigatorio">*</span></label
+          >
+          <input
+            type="tel"
+            name="telefone"
+            id="telefone"
+            placeholder="Insira seu telefone"
+            autocomplete="off"
+          />
+        </li>
+      </ul>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
