@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <title>Teste Estágio</title>
+    <style>
+        div {
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+        form {
+            opacity: 1;
+            border: 1px solid #ccf;
+            padding: 1em;
+            width: 78em;
+            position: absolute;
+            background: #fff !important;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="esconder">
+        <form id="form" action="javascript: enviar();" class="formulario" onsubmit="">
+            <div>
+                <input type="text" placeholder="Digite seu nome" class="inputs required js-input-name" name="name"
+                    oninput="nomeValidate()" required>
+                <span class="span-required"> Nome deve ter no mínimo 3 caracteres </span>
+            </div>
+            <div>
+                <input type="email" placeholder="E-mail" class="inputs required js-input-email" name="email"
+                    oninput="emailValidate()" required>
+                <span class="span-required">Digite um e-mail válido </span>
+            </div>
+            <div>
+                <input input type="text" id="telefone" name="tel" class="inputs required js-input-tel"
+                    placeholder="Telefone" size="16" maxlength="15" required>
+                <span class="span-required"> Digite apenas números </span>
+            </div>
+            <button type="submit" value="Enviar" id="botao" oninput="enviar()" disabled="disabled"
+                onclick=Alerta()>Enviar</button>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
