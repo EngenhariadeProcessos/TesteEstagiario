@@ -38,7 +38,7 @@ git checkout -b develop
 ```
 2. Faça o Commit. 
 ```bash
-git commit -m 'Execise Finished'
+git commit -m 'Finished Exercise '
 ```
 3. Realize o Push da Branch. 
 
