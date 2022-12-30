@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+*{
+    font-family: 'Roboto Slab', serif;
+    
+}
+.card-ui{
+    background-color: #ababab;
+    margin:100px 500px;
+    padding: 20px 40px;
+    border: 20px;
+    border-radius: 10px;
+    width: auto;
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.rotulo-form{
+    margin: 5px ;
+}
+
+.input-form{
+    border:2px;
+    border-radius: 2px;
+    padding: 8px;
+}
+.bnt{
+    margin-top: 20px;
+    border:5px;
+    border-radius: 2px;
+    padding: 8px;
+    width: 90px;
+    background-color: #2a66ff;
+    font-weight: 400px;
+    
+}
+button:hover{
+    background-color: #0646ea;
+    transform: scale(1); 
+    box-shadow: 0 5px 15px rgba(60, 164, 255, 0.6);
+}
+.final-form{
+    text-align: center;
+}
