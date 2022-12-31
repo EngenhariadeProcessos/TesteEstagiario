@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TesteEstagiario</title>
+  <link rel="stylesheet" href="./styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+      <div>
+        <h1>Teste para Estágio</h1>
+      </div>
+
+        <form method="post" id="form" target="_blank" action="">
+            <div class="form-teste-estagio">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Infome o Nome">
+                <span class='msg-erro msg-nome'></span>
+            </div>
+            <div class="form-teste-estagio">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Informe o E-mail">
+                <span class='msg-erro msg-email'></span>
+            </div>
+            <div class="form-teste-estagio">
+                <label for="telefone">Telefone pra contato</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Informe um telefone pra contato">
+                <span class='msg-erro msg-telefone'></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" name="submit" value="submit" id='button'>
+              Enviar
+            </button>
+        </form>
+    </div>
+  <script type="text/javascript" src="index.js" defer></script>
+
+</body>
+</html>

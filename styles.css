@@ -1,0 +1,67 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form-teste-estagio {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-teste-estagio label {
+display: inline-block;
+margin-bottom: 5px;
+}
+
+.form-teste-estagio input {
+  border: 2px solid;
+  display: block;
+  border-radius: 14px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-teste-estagio span {
+  color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-teste-estagio button {
+
+  font-size: 16px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 12px;
+}
