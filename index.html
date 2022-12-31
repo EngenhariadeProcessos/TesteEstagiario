@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Teste Estágio</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Open Sans", sans-serif;
+        background-color: #00a8ea;
+        min-height: 100vh;
+      }
+
+      header{        
+        min-height: 6vh;
+        background-color: gray;       
+      }
+
+      #title{        
+        color: white;
+        text-align: center;        
+        margin-top: 0px;
+        padding-top: 10px;
+      }
+
+      hr{
+        margin: 0;
+        border: 0;
+        height: 10px;  
+        color: rgb(228, 75, 205);      
+      }
+
+      #formulario {
+        position: relative;
+        min-height: 100vh;        
+      }
+
+      form {
+        border: 2px solid rgb(228, 75, 205);
+        background-color: white;
+        text-align: justify;
+        padding-left: 10px;
+        padding-bottom: 8px;
+        padding-right: 5px;
+        position: absolute;        
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+
+      #formTitle{
+        text-align: center;
+      }
+      .espacamento {
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+
+      input[type="submit"] {
+        color: white;
+        background-color: #00a8ea;
+        border: 1px solid;
+        width: 80px;
+      }
+
+      /*ajeitar media query!!!*/
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2 id="title">Formulário de cadastro</h2>
+    </header>
+    <hr>
+    <div id="formulario">
+      <form>
+        <h2 id="formTitle">Complete seu cadastro</h2>
+        <div class="espacamento">
+          <label for="name">Nome*:</label> <br>
+          <input type="text" id="name" placeholder="Enter your name"/>
+          <label>Nascimento:</label>
+          <input type="date" id="nasc"/>
+        </div>
+        <br />
+        <div class="espacamento">
+          <label for="email">Email*:</label> <br>
+          <input type="email" id="email" placeholder="Enter your email"/>
+          <label for="phone">Telefone*:</label> 
+          <input type="tel" id="phone" placeholder="Telefone" maxlength="11"/>
+        </div>
+        <div class="radio">
+          <br />
+          <label>Área de desensenvolvimento: </label> <br />
+          <input type="radio" id="frontEnd" name="area" value="front-end" />
+          <label for="frontEnd">Front-end</label> <br />
+          <input type="radio" id="backEnd" name="area" value="back-end" />
+          <label for="backEnd">Back-end</label> <br />
+          <input type="radio" id="mobile" name="area" value="mobile" />
+          <label for="mobile">Mobile</label> <br />
+          <input type="radio" id="cienciaDados" name="area" value="cienciaDados"/>
+          <label for="cienciaDados">Ciência de dados</label> <br /><br />
+        </div>
+        <div>
+          <label for="senioridade">Level:</label> <br />
+          <select name="select" id="senioridade">
+            <option value="estagiario" selected>Estagiário</option>
+            <option value="junior">Junior</option>
+            <option value="pleno">Pleno</option>
+            <option value="senior">Senior</option>
+          </select>
+        </div>
+        <br />
+
+        <label for="experiencia">Experiências:</label><br />
+        <textarea id="experiencia" rows="5" cols="50" maxlength="400"></textarea>
+        <br />
+
+        <input type="submit" onclick="validar()" ></button>
+
+        <script type="text/javascript" src="index.js"></script>
+      </form>
+    </div>
+  </body>
+</html>
