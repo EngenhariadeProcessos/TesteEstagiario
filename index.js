@@ -28,8 +28,11 @@ this.telefone = document.getElementById("telefone").value
 
 
 
-this.valorForm = {}
-
+this.valorForm = {
+    Nome: this.nome,
+    Email: this.email,
+    Telefone: this.telefone
+}
 //Validação dos campos e adição dos dados em um objeto
 
     if(this.valorForm.Nome == "", this.valorForm.Email == "", this.valorForm.Telefone == "") {
