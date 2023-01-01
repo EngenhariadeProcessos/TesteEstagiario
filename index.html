@@ -6,25 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= Oswald: wght @300 & display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <style>
-    .mensagem {
+@import url('https://fonts.googleapis.com/css2?family= Oswald: wght @300 & display=swap');
+
+*{
+    font-family: "Oswald", sans-serif;
+}
+
+.corpo {
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-size: 100%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.boxForm {
+    width: 250px;
+    height: 400px;
+    border: 5px solid purple;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.formulario div input {
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 5px 5px 0 black;
+    margin: 10px 0px;
+    border: 1px  rgb(136, 22, 136);;
+    background-color: transparent;
+    
+}
+
+
+.formulario div input:valid {
+     background-color: transparent;
+    }
+
+.formulario div input:focus{
+    outline: 0;
+}
+
+.formulario div input:hover{
+    background:linear-gradient(purple, rgb(173, 55, 173) );
+}
+
+.formulario div label {
+    margin-right: 20px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.mensagem {
     display: none;
 }
 
 .exibir {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    height: 100%;
 }
 
 .invisivel {
     display: none;
 }
+
+.fundoInput {
+    background: purple;
+}
+
 </style>
 
 <body class="corpo">
     <form action="javascript: enviar();" class="formulario">
+<div class="boxForm">
     <div>
         <label for="nome">Nome:</label>
         <input type="name" id="nome">
@@ -32,14 +104,16 @@
     <div>
         <label for="email">E-mail:</label>
         <input class="input" type="email" id="email">
-        <div>
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone">
-        </div>
+    </div>
+    <div>
+         <label for="telefone">Telefone</label>
+         <input type="tel" id="telefone">
+    </div>
         <div>
            <input type="submit" value="Enviar">
         </div>
     </div>
+</div>
 </form>
 </body>
 <script src="index.js"></script>

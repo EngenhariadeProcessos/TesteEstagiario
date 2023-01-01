@@ -1,5 +1,6 @@
 const corpo = document.querySelector(".corpo")
 const form = document.querySelector(".formulario")
+const inputs = document.querySelector("#nome")
 
 function novoElemento (tagName, className){
     const elem = document.createElement(tagName)
@@ -15,7 +16,6 @@ function criaMensagem () {
     this.Mensagem = novoElemento("p", "texto")
     this.Mensagem.innerHTML = "Obrigado por seu cadastro!"
     this.elemento.appendChild(this.Mensagem)
-    
 }
 
 const Mensagem = new criaMensagem()
@@ -43,6 +43,8 @@ this.valorForm = {
         this.valorForm.Email = email
         this.valorForm.Telefone = telefone
     }
+
+    if(inputs.value = true) inputs.classList.add("fundoInput")
 
 //Escondendo o formulario e exibindo mensagem de agradecimento
 
