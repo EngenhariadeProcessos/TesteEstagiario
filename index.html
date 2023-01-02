@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Contato</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <img class="logo__titulo" src="https://www.grafjb.com.br/_assets/imgs/logo.png">
+        <h1>Formulário de Contato</h1>
+        <h2>Obrigado por seu cadastro!</h2>
+    
+    <form
+      method="POST"
+      class="form"
+    >
+      <label for="name">Nome</label>
+      <input type="text" name="name" id="name" required />
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required />
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+      <input type="hidden" name="_captcha" value="false" />
+
+      <button id="btn-1">Enviar</button>
+
+
+    </form>
+  </body>
+</html>
