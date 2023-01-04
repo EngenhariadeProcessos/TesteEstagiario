@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Estagiario</title>
+    <script src="index.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            display: flex;
+            justify-content: center;
+            
+
+        }
+
+        #formTeste {
+            box-shadow: 5px 0.5px 6px 3.9px #888888;
+            margin: 50px;
+            padding: 25px;
+            padding-top: 2px;
+            background: white;
+            
+            
+
+        }
+
+        #resetForm {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: beige;
+            font-size: 50px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            top: 0;
+
+        }
+
+        #button {
+            padding: 20px;
+            font-size: 20px;
+            background-color: rgb(249, 97, 62);
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="formTeste" >
+        <br>
+        <label>Nome:</label> <br>
+        <input id="nome" type="text" size="50">
+        <br> <br>
+
+        <label>E-mail:</label> <br>
+        <input id="email" type="email" size="50">
+        <br> <br>
+
+        <label>Telefone:</label> <br>
+        <input id="tel" type="tel" size="50">
+        <br> <br>
+
+        <input onclick="pegarForm()" type="button" value="Enviar">
+    </form>
+
+    <div id="resetForm">
+        <div>
+            Obrigado por seu cadastro!
+        </div>
+        <button id="button" onclick="reset()">OK</button>
+    </div>
+
+
+
+</body>
+
+</html>
