@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    
+  </head>
+  <body>
+    <form id="form">
+      <fieldset>
+          <legend>FORMULÁRIO</legend>
+
+          <div class="field">
+            <label for="name">Nome:</label>
+            <input type="text" id="name"  placeholder="Souza Melo" name='name' required>
+          </div>
+        
+          <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder='user@email.com' name='email' required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone" placeholder='(000)90000-0000' name='phone' required>
+          </div>
+
+          <button type="submit" value="Enviar" id="button">enviar</button>
+      </fieldset>
+
+    </form>
+
+    <span id="congrat">Obrigado por seu cadastro!</span>
+
+    
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>
