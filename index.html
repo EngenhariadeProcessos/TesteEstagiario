@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário a ser preenchido</title>
+
+    <style>
+        body {
+            height: 100vh;
+            background-color:#799ca9;
+            font-family: sans-serif;
+        }      
+        .esboço {
+            display: none;
+        }
+        .conteud-esboço {
+            background-color: rgb(200, 228, 228);
+            border-radius: 0.5em;
+            box-shadow: 4px 4px 4px 4px gray;
+        }
+        .cabeçalho-esboço {
+            background-color: #1891AC;
+            border-radius: 0;
+            padding: 15px 15px;
+            color: whitesmoke;
+            font-size: 13px;
+            
+        }
+        .input-form {
+            padding: 12px;
+            border: 3px groove darkcyan;
+            border-radius: 8px;
+            width: 70%;
+            margin: 10px 10px;
+        }
+        .input-form::placeholder {
+            color: gray;
+            font-family: sans-serif;
+        }
+        .input-lista {
+            list-style: none;
+            
+        }
+        .input-botao {
+            border: 2px groove darkcyan;
+            width: 70%;
+            margin: 10px 25px;
+            font-family:sans-serif;
+            background-color: #1891AC;
+            color: whitesmoke;
+            padding: 10px;
+            border-radius: 6px;          
+        }
+        .input-botao:hover {
+            cursor: pointer;
+            font-size: 18px;
+            background-color: darkblue;
+            border: 2px groove #093A72;
+            color: white;          
+        }
+        .input-botao:active {
+            color: white;
+            background-color:red;            
+        }
+        .mensagem_erro {            
+            color: blue;
+            font-size: 18px;
+            display: block;
+            text-align: center;
+        }
+        .mensagem {
+            display: none;
+        }
+         .esboço-des {
+            display: block;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .mensagem__esboço {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mensagem-cad {
+            display: block;
+            background-color:darkcyan;
+            color: white;
+            padding: 20px;
+            font-size: 40px;
+            
+        }
+        .mensagem-cad-ativo {
+            display: none;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="esboço  esboço-des">
+        <div class="conteud-esboço">
+            <div class="cabeçalho-esboço">
+                <h1>
+                 Preencha as informações abaixo:
+                </h1>
+            </div>
+
+            <div class="mensagem_erro mensagem">
+                *Preencher todos os campos!
+            </div>
+
+            <form class="formulario">
+                <ul class="input-lista">
+                    <li class="item__lista">
+                        <input type="text" name="nome" class="input-form input-nome" placeholder="Digite seu nome...">
+                    </li>
+                    <li class="item__lista">
+                        <input type="email" name="email" class="input-form input-email" placeholder ="Digite seu email...">
+                    </li>
+                    <li class="item__lista">
+                        <input type="tel" name="telefone" class="input-form input-telefone" placeholder="(xx) xxxxx-xxxx">
+                    </li>
+                    <li class="item__lista">
+                        <input type="submit" name="botao" class="input-botao">
+                    </li>
+                    <li class="item__lista">
+                        <input type="reset" 
+                        name="botao"
+                        class="input-botao">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="mensagem__esboço">
+        <div class="mensagem-cad mensagem-cad-ativo">
+            Obrigado pelo cadastro!!!
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
