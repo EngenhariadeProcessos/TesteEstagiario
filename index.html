@@ -8,16 +8,17 @@
 </head>
 <body>
     <h1>Formulário de Inscrição:</h1>
+    <div>
+        <form id="form">
+            <p>Nome: <input type="text" placeholder="Digite seu nome" class="input" oninput="nomeValidacao()"></p>
 
-    <form id="form">
-        <p>Nome: <input type="text" placeholder="Digite seu nome" class="input" oninput="nomeValidacao()"></p>
+            <p>E-mail: <input type="email" placeholder="Digite um e-mail válido" class="input"></p>
 
-        <p>E-mail: <input type="email" placeholder="Digite um e-mail válido" class="input"></p>
+            <p>Telefone: <input type="text" class="input" placeholder="Digite seu telefone"></p>
 
-        <p>Telefone: <input type="text" class="input" placeholder="Digite seu telefone"></p>
-
-        <p><input type="button" value="Enviar"></p>
-    </form>
+            <p><input type="button" value="Enviar"></p>
+        </form>
+    </div>
     
     <script src="index.js"></script>
 </body>
