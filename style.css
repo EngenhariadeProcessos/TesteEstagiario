@@ -10,7 +10,23 @@
   --white: #eaeaea;
   --black: #212121;
   --light-black: #393939;
+  --gray: #9e9e9e;
   --light-gray: #c3c9d4;
+}
+
+header{
+  height: 5vh;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-radius: .2rem;
+}
+
+main header img{
+  width: 2rem;
+  cursor: pointer;
 }
 
 main{
@@ -86,7 +102,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 main form input{
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 aside{
@@ -102,4 +118,40 @@ aside p{
   font-size: .8rem;
   font-weight: bold;
   color: var(--black);
+}
+
+/* dark theme */
+
+.dark-text{
+  color: var(--white);
+}
+
+.dark-input{
+  color: var(--white);
+  background-color: var(--light-black);
+}
+
+.dark-main{
+  background-color: var(--black);
+}
+
+.dark-aside{
+  background-color: var(--light-black);
+}
+
+.dark-button{
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.dark-button:hover{
+  background-color: var(--light-gray);
+}
+
+.dark-aside p{
+  color: var(--white);
+}
+
+.dark-icon{
+  background-color: orange;
 }

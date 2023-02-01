@@ -161,3 +161,36 @@ inptName.addEventListener("keyup", manipulateInputName)
 inptEmail.addEventListener("keyup", manipulateInputEmail)
 inptNumber.addEventListener("keyup", manipulateInputNumber)
 form.addEventListener("submit", submitForm);
+
+
+// Light and Dark mode
+const icon = document.getElementById("icon");
+const inputs = document.querySelectorAll("input");
+const labels = document.querySelectorAll("label");
+const label = document.querySelector("aside");
+
+let mode = "light"
+
+icon.addEventListener("click", () => {
+  h1.classList.toggle("dark-text");
+  inputs.forEach((element) => {
+    element.classList.toggle("dark-input");
+    
+  });
+  labels.forEach((element) => {
+    element.classList.toggle("dark-text")
+  });
+
+  main.classList.toggle("dark-main");
+  button.classList.toggle("dark-button")
+  label.classList.toggle("dark-aside");
+
+  if(mode === "light"){
+    icon.setAttribute("src","./sun.svg");
+    mode = "dark";
+  }
+  else{
+    icon.setAttribute("src","./moon.svg");
+    mode = "light";
+  }
+})
