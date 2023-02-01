@@ -16,12 +16,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Formulário Gráfica JB</title>
 </head>
 
 <body>
 
+    <section class="position">
+        <div class="container">
+            <div class="inputs">
 
+                <div class="logos mb-4">
+                    <img class="logo" src="./aut25082021160111.png" alt="">
+                </div>
+
+                <label for="name">Nome <span>*</span></label>
+                <input class="form-control" id="name" type="text" placeholder="Informe seu nome" autofocus>
+                <div class="error1" id="error1">
+                    <p>Erro: Por favor insira seu Nome, Obrigatório!</p>
+                </div>
+
+                <label for="email">Email <span>*</span></label>
+                <input class="form-control" id="email" type="email" placeholder="Informe seu e-mail">
+                <div id="error2" class="error2">
+                    <p>Erro: Por favor insira seu Email, Obrigatório!</p>
+                </div>
+
+                <label for="number">Telefone <span>*</span></label>
+                <input class="form-control" id="number" type="tel" placeholder="Informe seu telefone">
+                <div id="error3" class="error3">
+                    <p>Erro: Por favor insira seu Telefone (9999-9999), Obrigatório!</p>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <input id="btn" style="background-color: #535DA1; color: #fff;" class="btn mt-3" type="submit" value="Enviar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sendForm">
+        <div class="send">
+            <h1>Obrigado por seu cadastro!</h1>
+
+            <div class="botoes mt-4">
+                <button id="btnReset" class="btn btn-danger">Voltar e Limpar o Formulário e Console</button>
+                <button id="btnBack" class="btn btn-success">Cadastrar outro usuário</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 

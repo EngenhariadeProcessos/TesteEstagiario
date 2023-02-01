@@ -1,3 +1,98 @@
+:root {
+    --error: #ff0000;
+    --default: #ffffff;
+    --hover: #000000;
+    --send: #535DA1;
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
 * {
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
+}
+
+.inputs label span {
+    color: var(--error);
+}
+
+.inputs input:focus {
+    box-shadow: none;
+}
+
+.error1,
+.error2,
+.error3 {
+    display: none;
+}
+
+.error1 p,
+.error2 p,
+.error3 p {
+    /* display: none; */
+    margin: 0;
+    color: var(--error);
+    font-size: .90rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sendForm {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.send {
+    display: flex;
+    flex-direction: column;
+}
+
+.send h1 {
+    font-weight: 200;
+    color: var(--send);
+    font-size: 4rem;
+}
+
+.botoes {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 10rem;
 }
