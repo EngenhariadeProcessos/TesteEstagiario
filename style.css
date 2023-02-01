@@ -26,7 +26,7 @@ main{
 
 main #final-button{
   margin-top: 1rem;
-  width: 10%;
+  width: 20%;
   cursor: pointer;
   background-color: var(--black);
   color: var(--white);

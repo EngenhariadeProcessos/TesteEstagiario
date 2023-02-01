@@ -10,16 +10,20 @@ button.disabled = true;
 
 let datasOfUser = {};
 
-// helper variabes.
-stateButton = false;
-stateName = false;
-stateEmail = false;
-stateNumber = false;
+// Status button.
+let statusButton = {
+  name: false,
+  email: false,
+  number: false
+}
 
 //helper functions
 const handlerStateButton = () => {
-  if(stateName == true && stateEmail == true && stateNumber == true){
+  if(statusButton.name === true && statusButton.email === true && statusButton.number === true){
     button.disabled = false;
+  }
+  else{
+    button.disabled = true;
   }
 }
 
@@ -66,13 +70,23 @@ const updateErrorDOM = (typeInpt,input, value, errParagh) => {
 }
 
 const returnInitialState = () => {
-  const button = document.getElementById("final-button");
+  const finalButton = document.getElementById("final-button");
+
   form.style.display = "inherit";
   h1.textContent = "Form";
   inptEmail.value = "";
   inptName.value = "";
   inptNumber.value = "";
-  main.removeChild(button);
+
+  statusButton = {
+    name: false,
+    email: false,
+    number: false
+  }
+
+  button.disabled = true;
+
+  main.removeChild(finalButton);
 }
 
 //Main functions
@@ -86,41 +100,64 @@ const submitForm = (e) => {
   button.textContent = "Clique para voltar!";
   button.addEventListener("click", returnInitialState);
 
-  main.appendChild(button)
-  console.log(datasOfUser)
+  main.appendChild(button);
+  console.log(datasOfUser);
 }
 
-const updateInputName = (e) => {
+const manipulateInputName = (e) => {
   const value = e.target.value;
   const errParagh = document.getElementById("err-name");
   updateErrorDOM("name", inptName, value, errParagh)
-  datasOfUser["name"] = value;
-  handlerStateButton()
+
+  const response = checkDatas("name", value);
+  if(response){
+    statusButton.name = true;
+    datasOfUser["name"] = value;
+    handlerStateButton();
+  }
+  else{
+    statusButton.name = false;
+    handlerStateButton();
+  }
 }
 
-const updateInputEmail = (e) => {
+const manipulateInputEmail = (e) => {
   const value = e.target.value;
   const errParagh = document.getElementById("err-email");
 
   updateErrorDOM("email", inptEmail, value, errParagh);
 
-  stateEmail = true;
-  datasOfUser["email"] = value;
-  handlerStateButton();
+  const response = checkDatas("email", value);
+  if(response){
+    statusButton.email = true;
+    datasOfUser["email"] = value;
+    handlerStateButton();
+  }
+  else{
+    statusButton.email = false;
+    handlerStateButton();
+  }
 }
 
-const updateInputNumber = (e) => {
+const manipulateInputNumber = (e) => {
   const value = e.target.value;
   const errParagh = document.getElementById("err-number");
 
   updateErrorDOM("number", inptNumber, value, errParagh);
 
-  stateNumber = true;
-  datasOfUser["number"] = value;
-  handlerStateButton();
+  const response = checkDatas("number", value);
+  if(response){
+    statusButton.number = true;
+    datasOfUser["number"] = value;
+    handlerStateButton();
+  }
+  else{
+    statusButton.number = false;
+    handlerStateButton();
+  }
 }
 
-inptName.addEventListener("keyup", updateInputName)
-inptNumber.addEventListener("keyup", updateInputNumber)
-inptEmail.addEventListener("keyup", updateInputEmail)
+inptName.addEventListener("keyup", manipulateInputName)
+inptEmail.addEventListener("keyup", manipulateInputEmail)
+inptNumber.addEventListener("keyup", manipulateInputNumber)
 form.addEventListener("submit", submitForm);
