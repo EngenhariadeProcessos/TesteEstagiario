@@ -11,7 +11,7 @@ function validacaoFormulario(event) {
     let telefone = document.forms["formulario"]["telefone"].value;
 
     if (nome == "" || email == "" || telefone == "") {
-      mensagem.textContent = "Todos os campos precisam estar preenchidos";
+      mensagem.textContent = "Todos os campos precisam estar preenchidos!";
       return false;
     } else {
       mensagem.textContent = "Obrigado por seu cadastro!";
