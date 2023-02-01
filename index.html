@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    body {
+      background-image: url('https://img.freepik.com/free-vector/pink-organic-shape-background_53876-97811.jpg?w=826&t=st=1675268724~exp=1675269324~hmac=d7503bebfdf2063cbe9c65592782fedf1bfc501fd36471464cbc6db8d5030182');
+      background-size: cover;
+    }
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 50px;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>Formulário de contato</title>
+</head>
+<body>
+  <div class="form-container">
+    <h1 class="text-center">Preencha os campos</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" class="form-control" id="name" name="nome">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefone:</label>
+        <input type="tel" class="form-control" id = "telefone" name = "telefone" >
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <script src="index.js" defer></script>
+</body>
+</html>
