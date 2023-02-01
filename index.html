@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Validação de Formulário</title>
 </head>
-<body>
-    <h1>Formulário de Inscrição:</h1>
-    <div>
-        <form id="form">
-            <p>Nome: <input type="text" placeholder="Digite seu nome" class="input" oninput="nomeValidacao()"></p>
 
-            <p>E-mail: <input type="email" placeholder="Digite um e-mail válido" class="input"></p>
+<body>    
+    <div class="container form-container">
+        <h1>Validação de Formulário</h1>
 
-            <p>Telefone: <input type="text" class="input" placeholder="Digite seu telefone"></p>
-
-            <p><input type="button" value="Enviar"></p>
+        <form class="formulario" name="formulario" method="REQUEST" onsubmit="return validacaoFormulario(event)">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+            <br><br>
+            <input type="submit" value="Enviar">
         </form>
-    </div>
-    
-    <script src="index.js"></script>
-</body>
 
+        <p class="mensagem"></p>
+    </div>
+
+        <script src="/assets/js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
 </html>
