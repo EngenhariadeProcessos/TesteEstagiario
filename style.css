@@ -42,7 +42,7 @@ main{
 
 main #final-button{
   margin-top: 1rem;
-  width: 20%;
+  width: 40%;
   cursor: pointer;
   background-color: var(--black);
   color: var(--white);
