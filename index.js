@@ -1,4 +1,5 @@
 // Elements DOM
+
 const main = document.querySelector("main");
 const h1 = document.querySelector("h1");
 const inptName = document.getElementById("name");
@@ -11,6 +12,7 @@ button.disabled = true;
 let datasOfUser = {};
 
 // Status button.
+
 let statusButton = {
   name: false,
   email: false,
@@ -18,6 +20,7 @@ let statusButton = {
 }
 
 //helper functions
+
 const handlerStateButton = () => {
   if(statusButton.name === true && statusButton.email === true && statusButton.number === true){
     button.disabled = false;
@@ -90,6 +93,7 @@ const returnInitialState = () => {
 }
 
 //Main functions
+
 const submitForm = (e) => {
   e.preventDefault();
   form.style.display = "none"
@@ -164,6 +168,7 @@ form.addEventListener("submit", submitForm);
 
 
 // Light and Dark mode
+
 const icon = document.getElementById("icon");
 const inputs = document.querySelectorAll("input");
 const labels = document.querySelectorAll("label");
