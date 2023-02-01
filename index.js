@@ -8,18 +8,13 @@ button.disabled = true;
 
 let datasOfUser = {};
 
-let stateButton = false;
-
-// input states, if all pass the regex (all are true) it will be logged
+// helper variabes.
+stateButton = false;
 stateName = false;
 stateEmail = false;
 stateNumber = false;
 
-const submitForm = (e) => {
-  e.preventDefault();
-  console.log(datasOfUser)
-}
-
+//helper functions
 const handlerStateButton = () => {
   if(stateName == true && stateEmail == true && stateNumber == true){
     button.disabled = false;
@@ -51,73 +46,59 @@ const checkDatas = (typo, data) => {
   }
 }
 
-const updateInputName = (e) => {
-  const input = e.target.value;
-  const errParagh = document.getElementById("err-name");
-
-  if(!checkDatas("name", input)){
+const updateErrorDOM = (typeInpt,input, value, errParagh) => {
+  if(!checkDatas(typeInpt, value)){
     if (errParagh){
-      return inptName.style.border = "1px solid red";
+      return input.style.border = "1px solid red";
     }
 
-    const paragraf = createElement("p","Exist one error text", "err-name");
-    inptName.insertAdjacentElement("beforebegin", paragraf);
-    return inptName.style.border = "1px solid red";
+    const paragraf = createElement("p","Exist one error text", `err-${typeInpt}`);
+    input.insertAdjacentElement("beforebegin", paragraf);
+    return input.style.border = "1px solid red";
   }
 
   if(errParagh){
     form.removeChild(errParagh);
-    inptName.style.border = "none"
+    input.style.border = "none"
   }
+}
+
+//Main functions
+const submitForm = (e) => {
+  e.preventDefault();
+  console.log(datasOfUser)
+}
+
+const updateInputName = (e) => {
+  const value = e.target.value;
+  const errParagh = document.getElementById("err-name");
+
+  updateErrorDOM("name", inptName, value, errParagh)
 
   stateName = true;
-  datasOfUser["name"] = input;
+  datasOfUser["name"] = value;
   handlerStateButton()
 }
 
 const updateInputEmail = (e) => {
-  const input = e.target.value;
+  const value = e.target.value;
   const errParagh = document.getElementById("err-email");
 
-  if(!checkDatas("email",input)){
-    if(errParagh){
-      return inptEmail.style.border = "1px solid red"
-    }
-    const errEmailParagraf = createElement("p", "Exist error email", "err-email");
-    inptEmail.insertAdjacentElement("beforebegin", errEmailParagraf);
-    return inptEmail.style.border = "1px solid red";
-  }
-
-  if(errParagh){
-    form.removeChild(errParagh);
-    inptEmail.style.border = "none";
-  }
+  updateErrorDOM("email", inptEmail, value, errParagh);
 
   stateEmail = true;
-  datasOfUser["email"] = input;
+  datasOfUser["email"] = value;
   handlerStateButton();
 }
 
 const updateInputNumber = (e) => {
-  const input = e.target.value;
+  const value = e.target.value;
   const errParagh = document.getElementById("err-number");
 
-  if(!checkDatas("number",input)){
-    if(errParagh){
-      return inptNumber.style.border = "1px solid red"
-    }
-    const errNumberParagraf = createElement("p", "exist error number", "err-number");
-    inptNumber.insertAdjacentElement("beforebegin", errNumberParagraf);
-    return inptNumber.style.border = "1px solid red";
-  }
-
-  if(errParagh){
-    form.removeChild(errParagh);
-    inptNumber.style.border = "none"
-  }
+  updateErrorDOM("number", inptNumber, value, errParagh);
 
   stateNumber = true;
-  datasOfUser["number"] = input;
+  datasOfUser["number"] = value;
   handlerStateButton();
 }
 
