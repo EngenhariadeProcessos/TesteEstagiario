@@ -1,4 +1,6 @@
 // Elements DOM
+const main = document.querySelector("main");
+const h1 = document.querySelector("h1");
 const inptName = document.getElementById("name");
 const inptEmail = document.getElementById("email");
 const inptNumber = document.getElementById("number");
@@ -63,19 +65,35 @@ const updateErrorDOM = (typeInpt,input, value, errParagh) => {
   }
 }
 
+const returnInitialState = () => {
+  const button = document.getElementById("final-button");
+  form.style.display = "inherit";
+  h1.textContent = "Form";
+  inptEmail.value = "";
+  inptName.value = "";
+  inptNumber.value = "";
+  main.removeChild(button);
+}
+
 //Main functions
 const submitForm = (e) => {
   e.preventDefault();
+  form.style.display = "none"
+  h1.textContent = "Obrigado por seu cadastro!"
+
+  const button = document.createElement("button");
+  button.id = "final-button"
+  button.textContent = "Clique para voltar!";
+  button.addEventListener("click", returnInitialState);
+
+  main.appendChild(button)
   console.log(datasOfUser)
 }
 
 const updateInputName = (e) => {
   const value = e.target.value;
   const errParagh = document.getElementById("err-name");
-
   updateErrorDOM("name", inptName, value, errParagh)
-
-  stateName = true;
   datasOfUser["name"] = value;
   handlerStateButton()
 }
