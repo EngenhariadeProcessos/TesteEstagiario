@@ -4,36 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Validação de Formulário</title>
 </head>
 
-<body>    
-   
+<body>   
     <div class="container form-container">
-        <h1>Validação de Formulário</h1>
+        <h1>Preencha seus dados</h1>
 
         <form class="formulario" name="formulario" method="REQUEST" onsubmit="return validacaoFormulario(event)">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome">
-            
+            <label for="nome">Nome *</label>
+            <input type="text" id="nome" name="nome">            
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-           
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email">           
 
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone">
-            
+            <label for="telefone">Telefone *</label>
+            <input type="tel" id="telefone" name="telefone">            
 
             <div class="botao">
-                <button type="button" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
         </form>
 
         <p class="mensagem"></p>
     </div>
+
     <script src="/assets/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

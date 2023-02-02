@@ -1,5 +1,5 @@
-var mensagem = document.querySelector(".mensagem");
-var formulario = document.querySelector(".formulario");
+let mensagem = document.querySelector(".mensagem");
+let formulario = document.querySelector(".formulario");
 
 console.log(mensagem.textContent);
 
