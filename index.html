@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="principal">
+        <form action="" id="registrar">
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="3" required data-required data-email-validate>
+            </div> <br>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" data-max-length="16" data-only-letter required data-required>
+            </div> <br>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="text" name="telefone" id="telefone" placeholder="Digite o seu telefone"  required data-required data-telephone-validation>
+            </div> <br>
+            <button id="enviar">Enviar</button> <br>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="index.js"></script>
+    
+</body>
+</html>
