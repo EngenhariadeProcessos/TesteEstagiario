@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<style>
+  html, body {
+  height: 100%;
+  width: 100%;
+}
+form {
+  height: 50%;
+  width: 50%;
+}
+.formulario, #cad {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+#cad {
+  margin: 20%;
+}
+</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class='formulario' id="form">
+    <form action="javascript: enviarDados();" method="post", onsubmit="return verificaCampo(this)">
+      <h1 class="text-center"> Teste Estagiário </h1>
+    <div class="form-group">
+      <input type="text" class="form-control" id="nome" placeholder="Nome">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="telefone" placeholder="Telefone">
+    </div>
+    <div style="text-align: right">
+      <input class="btn btn-primary" type="submit" value="enviar">
+    </div>
+    </form>
+  </div>
+  <div id="cad">
+    <img src=https://uxwing.com/wp-content/themes/uxwing/download/checkmark-cross/success-green-check-mark-icon.png width="50" height="50">
+    <h2> Obrigado por seu Cadastro!</h2>
+  </div>
+  <script src="index.js">
+    
+  </script>
+</body>
+
+</html>
