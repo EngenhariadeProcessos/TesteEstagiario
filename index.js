@@ -1,6 +1,7 @@
 const formulario = document.querySelector("#formulario");
 const mensagem = document.querySelector("#mensagem");
 
+
 formulario.addEventListener("submit", function(event) {
   event.preventDefault();
 
