@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const formulario = document.querySelector("#formulario");
 const mensagem = document.querySelector("#mensagem");
 
@@ -26,3 +27,5 @@ formulario.addEventListener("submit", function(event) {
 });
 
 
+=======
+>>>>>>> 1206017887755c91b9c1e1029e579b6cb14dad08
