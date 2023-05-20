@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <title>Teste Estágiario - Gráfica JB</title>
+
+    <style>
+        .box {
+            max-width: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="d-flex flex-column align-items-center justify-content-center vh-100 bg-light">
+        <div class="box flex flex-column bg-white p-4 rounded shadow">
+            <h1>Formulário</h1>
+            <div class="form-responsive">
+                <form class="d-flex flex-column gap-3" onsubmit="validadeFormData(event)">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="inputName" placeholder="Nome">
+                        <label for="inputName" class="form-label">Nome</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
+                        <label for="inputEmail" class="form-label">E-mail</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="tel" class="form-control" id="inputPhone" placeholder="Telefone">
+                        <label for="inputPhone" class="form-label">Telefone</label>
+                    </div>
+                    <button class="btn btn-primary w-100" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
