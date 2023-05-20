@@ -21,7 +21,7 @@ function showMessage() {
     const message = document.createElement('h2')
     message.innerText = 'Obrigado por seu cadastro!'
 
-    box.style.display = 'none'
+    box.remove()
     container.appendChild(message)
 
 }
