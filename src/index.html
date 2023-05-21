@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Formulário de Registro para a vaga de estagiário" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/website-creator.png">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" media="screen" />
+    <title>Formulário de Registro</title>
+  </head>
+
+  <div class="container">
+    <div class="form-container">
+      <h3 class="title">Registro de Estagiário</h3>
+
+      <form id="form-user" class="form-submit-user" action="">
+        <label for="name">Nome Completo</label>
+        <input type="text" id="name" name="fullname" placeholder="Leonardo Chermaut" minlength="10" maxlength="50" title="Apenas letras são permtidas" required />
+
+        <label for="age">Idade</label>
+        <input type="number" id="age" name="age" placeholder="26" min="18" max="30"
+          title="A idade para o cadastro deve ser de 18 à 30 anos." required />
+
+        <label for="job">Cargo Pretendido</label>
+        <input type="text" id="job" name="job" placeholder="Programador Front-End" minlength="5" maxlength="35"
+          title="Apenas letras são permitidas" required />
+
+        <label for="email">Seu melhor email</label>
+        <input type="email" id="email" name="email" maxlength="80" minlength="10"
+          placeholder="leonardochermaut.jobs@gmail.com" title="Apenas letras são permtidas" required />
+
+        <label for="phone">Celular</label>
+        <input type="tel" id="phone" name="phone" placeholder="(21)9 9999-9999" title="Apenas numeros são permitidos"
+          required />
+
+        <label for="created-at">Criado em</label>
+        <input type="text" id="created-at" name="date" readonly="readonly" />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+  </div>
+  <script src="./script/index.js"></script>
+</body>
+
+</html>

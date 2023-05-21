@@ -1,0 +1,133 @@
+/* ----- Font import ----- */
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@300;400&display=swap");
+
+/* ---------------------------- Reset ---------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Blinker;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    background-color: #f0ece7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ----- Medias ----- */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* ----- Functionalities ----- */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* ----- Texts ----- */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* ----- Root ----- */
+::root {
+    isolation: isolate;
+}
+
+html,
+body,
+.container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #45a049;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: rgb(69, 160, 125);
+    background: linear-gradient(90deg,
+            rgba(69, 160, 125, 1) 0%,
+            rgba(144, 160, 69, 1) 100%);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.title {
+    color: #45a049;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.form-container {
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .form-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .form-container {
+        width: 90%;
+    }
+}
+    
