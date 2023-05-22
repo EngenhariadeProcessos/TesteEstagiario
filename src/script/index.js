@@ -1,5 +1,4 @@
 const initializeApp = () => {
-
   const inputElements = {
     form: document.getElementById("form-user"),
     name: document.getElementById("name"),
@@ -7,18 +6,20 @@ const initializeApp = () => {
     job: document.getElementById("job"),
     email: document.getElementById("email"),
     phone: document.getElementById("phone"),
-    createdAt: (document.getElementById("created-at").value = new Date().toLocaleDateString()),
+    createdAt: (document.getElementById("created-at").value =
+      new Date().toLocaleDateString()),
   };
 
   const { form, name, job, phone } = inputElements;
   const formFields = ["name", "age", "job", "email", "phone"];
 
   const handleFormFields = () => {
-    const formRegisterUser = {};
-    formFields.forEach((fieldName) => {
-      formRegisterUser[fieldName] = inputElements[fieldName].value;
-      formRegisterUser["createdAt"] = inputElements["createdAt"];
-    });
+    let formRegisterUser = {};
+    formRegisterUser["createdAt"] = inputElements["createdAt"];
+    formFields.forEach(
+      (fieldName) =>
+        (formRegisterUser[fieldName] = inputElements[fieldName].value)
+    );
     return formRegisterUser;
   };
 
@@ -26,38 +27,35 @@ const initializeApp = () => {
     const cleanedPhoneNumber = phoneNumber.replace(/\D/g, "");
     const match = cleanedPhoneNumber.match(/(\d{0,2})(\d{0,1})(\d{0,4})(\d{0,4})/);
     if (!match[2]) return match[1];
-
     return `(${match[1]})${match[2]} ${match[3]}-${match[4]}`;
   };
 
-  const checkLength = (input, letters, minLength, maxLength) => {
+  const checkLengthLettersInput = (input, letters, minLength, maxLength) => {
     if (letters.length < minLength) {
-      input.setCustomValidity(`Digite pelo menos ${minLength} caracteres.`);
+      input.setCustomValidity(`O nome deve ter no mínimo ${minLength} caracteres.`);
     } else if (letters.length > maxLength) {
-      input.setCustomValidity(`Digite no máximo ${maxLength} caracteres.`);
+      input.setCustomValidity(`O nome deve ter no máximo ${maxLength} caracteres.`);
     } else {
       input.setCustomValidity("");
     }
   };
 
   const handlePhoneInput = (e) => {
-    const { value: formatted } = e.target;
-    e.target.value = formatPhoneNumber(formatted);
+    const { value: number } = e.target;
+    return (e.target.value = formatPhoneNumber(number));
   };
 
   const allowOnlyLetters = (input, minLength, maxLength) => {
-    let letters = input.value.replace(/[^A-Za-zÀ-ÿ\s ]/g, "");
-    checkLength(input, letters, minLength, maxLength);
+    const letters = input.value.replace(/[^A-Za-zÀ-ÿ\s ]/g, "");
+    checkLengthLettersInput(input, letters, minLength, maxLength);
     return (input.value = letters);
   };
-  
-  const handleInputValidation = (input, minLength, maxLength) => {
-    return input.addEventListener("input", () => allowOnlyLetters(input, minLength, maxLength));
-  };
 
-  phone.addEventListener("input", handlePhoneInput);
-  handleInputValidation(name, 10, 50);
-  handleInputValidation(job, 5, 35);
+  const inputValidationTypeText = (input, minLength, maxLength) => {
+    return input.addEventListener("input", () =>
+      allowOnlyLetters(input, minLength, maxLength)
+    );
+  };
 
   const showMessageRequest = (message) => alert(message);
 
@@ -67,7 +65,17 @@ const initializeApp = () => {
     showMessageRequest("Dados enviados com sucesso!");
   };
 
+  phone.addEventListener("input", handlePhoneInput);
+  inputValidationTypeText(name, 10, 50);
+  inputValidationTypeText(job, 5, 35);
+
   form.addEventListener("submit", handleSubmit);
 };
 
-window.addEventListener("DOMContentLoaded", initializeApp);
+window.addEventListener("DOMContentLoaded", () => {
+  try {
+    initializeApp();
+  } catch (error) {
+    console.error("[error]: ", error);
+  }
+});
