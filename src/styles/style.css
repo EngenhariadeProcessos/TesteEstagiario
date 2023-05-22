@@ -71,11 +71,11 @@ body,
 input,
 select {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 0.063rem solid #ccc;
+    border-radius: 0.25rem;
     box-sizing: border-box;
 }
 
@@ -83,10 +83,10 @@ input[type="submit"] {
     width: 100%;
     background-color: #45a049;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 0.875rem 1.25rem;
+    margin: 0.5rem 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
 }
 
@@ -95,7 +95,7 @@ input[type="submit"]:hover {
     background: linear-gradient(90deg,
             rgba(69, 160, 125, 1) 0%,
             rgba(144, 160, 69, 1) 100%);
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.1);
 }
 
 
@@ -107,9 +107,9 @@ input[type="submit"]:hover {
 
 .form-container {
     width: 50%;
-    padding: 20px;
-    box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.24);
-    border-radius: 5px;
+    padding: 1.25rem;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.24);
+    border-radius: 0.313rem;
 }
 
 .container {
