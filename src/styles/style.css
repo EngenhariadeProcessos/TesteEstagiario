@@ -93,15 +93,17 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: rgb(69, 160, 125);
     background: linear-gradient(90deg,
-            rgba(69, 160, 125, 1) 0%,
-            rgba(144, 160, 69, 1) 100%);
+            rgb(42, 204, 45) 0%,
+            rgb(42, 204, 45) 100%);
     box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.1);
 }
 
 
 .title {
-    color: #45a049;
+    color: #343434;
     text-align: center;
+    margin: 1rem;
+    font-weight: 400;
     font-size: 1.7rem;
 }
 
