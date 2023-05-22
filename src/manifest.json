@@ -1,0 +1,7 @@
+{
+    "name": "JS The Right Way",
+    "icons": [],
+    "start_url": "/src/index.html",
+    "display": "standalone",
+    "orientation": "portrait"
+  }
