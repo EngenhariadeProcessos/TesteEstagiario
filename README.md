@@ -21,7 +21,7 @@ Nesta etapa do processo seletivo de novos estagiários criamos este repositório
 
 - **JavaScript**<br>
   - Definir uma validação para os campos não permitindo enviar com os valores em branco;   
-  - Após clicar no botão enviar, os valores dos campos devem ser passados para um objeto do `JS`, é este deve ser exibido no console do browser;
+  - Após clicar no botão enviar, os valores dos campos devem ser passados para um objeto do `JS`, e este deve ser exibido no console do browser;
   - Após clicar no botão enviar, ocultar o formulário e exibir a mensagem: **`Obrigado por seu cadastro!`**
   - Utilizar somente o arquivo `index.js` para adicionar todo o código `JS`;
 
