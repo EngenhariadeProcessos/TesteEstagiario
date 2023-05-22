@@ -1,7 +1,16 @@
 {
-    "name": "JS The Right Way",
-    "icons": [],
-    "start_url": "/src/index.html",
-    "display": "standalone",
-    "orientation": "portrait"
-  }
+  "name": "Formulário de Registro",
+  "version": "1.0.0",
+  "description": "Formulário de Registro para a vaga de estagiário",
+  "main": "index.html",
+  "icons": [
+    {
+      "src": "/src/assets/website-creator.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/src/index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}
