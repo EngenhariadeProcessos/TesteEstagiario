@@ -5,16 +5,14 @@ const initializeApp = () => {
   const inputElements = {
     form: document.getElementById("form-user"),
     name: document.getElementById("name"),
-    age: document.getElementById("age"),
-    job: document.getElementById("job"),
     email: document.getElementById("email"),
     phone: document.getElementById("phone"),
     createdAt: (document.getElementById("created-at").value = new Date().toLocaleDateString()),
   };
 
-  // Campos do formulário que serão manipulados
-  const { form, name, job, phone } = inputElements;
-  const formFields = ["name", "age", "job", "email", "phone"];
+// Campos do formulário que serão manipulados
+  const { form, name, phone } = inputElements;
+  const formFields = ["name", "email", "phone"];
 
 /**
   Manipula os campos do formulário e retorna um objeto com os valores inseridos.
@@ -28,19 +26,6 @@ const initializeApp = () => {
     return formRegisterUser;
   };
 
-
-/**
-  Formata o número de telefone no formato (99)9 9999-9999.
-  @param {string} phoneNumber - O número de telefone a ser formatado.
-  @returns {string} - O número de telefone formatado.
-*/
-  const formatPhoneNumber = (phoneNumber) => {
-    const cleanedPhoneNumber = phoneNumber.replace(/\D/g, "");
-    const match = cleanedPhoneNumber.match(/(\d{0,2})(\d{0,1})(\d{0,4})(\d{0,4})/);
-    if (!match[2]) return match[1];
-    return `(${match[1]})${match[2]} ${match[3]}-${match[4]}`;
-  };
-
 /**
   Verifica o comprimento de uma string e define uma mensagem de validação.
   @param {HTMLElement} input - O elemento de entrada a ser validado.
@@ -48,7 +33,7 @@ const initializeApp = () => {
   @param {number} minLength - O comprimento mínimo permitido.
   @param {number} maxLength - O comprimento máximo permitido.
 */
-  const checkLengthLettersInput = (input, letters, minLength, maxLength) => {
+  const validateLengthInputText = (input, letters, minLength, maxLength) => {
     const { length: characters } = letters;
     if (characters < minLength) {
       input.setCustomValidity(`O nome deve ter no mínimo ${minLength} caracteres.`);
@@ -66,9 +51,9 @@ const initializeApp = () => {
     @param {number} maxLength - O comprimento máximo permitido.
     @returns {string} - A string resultante contendo apenas letras.
   */
-  const allowOnlyLetters = (input, minLength, maxLength) => {
+  const replaceNumberToString = (input, minLength, maxLength) => {
     const letters = input.value.replace(/[^A-Za-zÀ-ÿ\s ]/g, "");
-    checkLengthLettersInput(input, letters, minLength, maxLength);
+    validateLengthInputText(input, letters, minLength, maxLength);
 
     return (input.value = letters);
   };
@@ -79,12 +64,24 @@ const initializeApp = () => {
   @param {number} minLength - O comprimento mínimo permitido.
   @param {number} maxLength - O comprimento máximo permitido.
 */
-  const inputValidationTypeText = (input, minLength, maxLength) => {
-    return input.addEventListener("input", () => allowOnlyLetters(input, minLength, maxLength));
+  const validateInputText = (input, minLength, maxLength) => {
+    return input.addEventListener("input", () => replaceNumberToString(input, minLength, maxLength));
   };
 
-  inputValidationTypeText(name, 10, 50);
-  inputValidationTypeText(job, 5, 35);
+  validateInputText(name, 10, 50);
+
+/**
+  Formata o número de telefone no formato (99)9 9999-9999.
+  @param {string} phoneNumber - O número de telefone a ser formatado.
+  @returns {string} - O número de telefone formatado.
+*/
+const formatPhoneNumber = (phoneNumber) => {
+  const cleanedPhoneNumber = phoneNumber.replace(/\D/g, "");
+  const match = cleanedPhoneNumber.match(/(\d{0,2})(\d{0,1})(\d{0,4})(\d{0,4})/);
+  if (!match[2]) return match[1];
+  return `(${match[1]})${match[2]} ${match[3]}-${match[4]}`;
+};
+
 
 /**
   Manipula a entrada do telefone para formatá-la conforme é digitada.
@@ -110,15 +107,15 @@ const initializeApp = () => {
     const register = handleFormFields();
     console.table(register);
   };
-
-/**
-  Manipula o evento de envio do formulário.
-  @param {Event} e - O evento de envio do formulário.
-*/
+  
+  /**
+   Manipula o evento de envio do formulário.
+   @param {Event} e - O evento de envio do formulário.
+   */
   const handleSubmit = (e) => {
     e.preventDefault();
     showDataRegister();
-    showMessageRequest("Dados enviados com sucesso!");
+    showMessageRequest("Obrigado por seu cadastro!");
   };
 
   form.addEventListener("submit", handleSubmit);

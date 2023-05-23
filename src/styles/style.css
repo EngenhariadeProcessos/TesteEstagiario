@@ -61,24 +61,25 @@ h6 {
 }
 
 html,
-body{
+body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-.form-container {
-    width: 50%;
-    padding: 1.25rem;
-    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.24);
-    border-radius: 0.313rem;
-}
-
-.container {
+section {
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
+}
+
+.form-container {
+    margin: 5% 0;
+    width: 50%;
+    padding: 1.25rem;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.24);
+    border-radius: 0.313rem;
 }
 
 input,
@@ -132,4 +133,3 @@ input[type="submit"]:hover {
         width: 90%;
     }
 }
-    
