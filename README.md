@@ -29,7 +29,9 @@ Nesta etapa do processo seletivo de novos estagiários criamos este repositório
 
 - Você pode utilizar Bootstrap, jQuery ou qualquer outra biblioteca de sua preferência. 
 - Saber pesquisar e encontrar soluções é válido, mas tenha a documentação oficial como sua aliada, utilize estes sites de preferência como referência: [MDN Web Docs](https://developer.mozilla.org/pt-BR/) é [W3Schools OnlineWeb Tutorials](https://www.w3schools.com/)
-- Não é preciso criar um `pull request` no repositório principal do teste, você deve fazer isso apenas na sua branch `main`
+- Não é necessário criar um `pull request` no repositório principal do teste, você deve fazer isso apenas na sua branch `main` do seu fork
+- Nã mude ou altere o nome do repositorio do seu fork 
+- Não clone o repositório do teste e crie um novo a partir dele, o teste envolve apenas criar um fork 
 
 ## Comandos básicos do GIT
 
