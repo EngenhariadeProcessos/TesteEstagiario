@@ -1,12 +1,11 @@
 {
   "name": "Formulário de Registro",
-  "version": "1.0.0",
   "description": "Formulário de Registro para a vaga de estagiário",
+  "version": "1.0.0",
   "main": "index.html",
   "icons": [
     {
-      "src": "/src/assets/website-creator.png",
-      "sizes": "96x96",
+      "src": "/src/assets/img/icon-192x192.png",
       "type": "image/png"
     }
   ],

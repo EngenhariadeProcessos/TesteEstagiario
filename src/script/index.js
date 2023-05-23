@@ -6,8 +6,7 @@ const initializeApp = () => {
     job: document.getElementById("job"),
     email: document.getElementById("email"),
     phone: document.getElementById("phone"),
-    createdAt: (document.getElementById("created-at").value =
-      new Date().toLocaleDateString()),
+    createdAt: (document.getElementById("created-at").value = new Date().toLocaleDateString()),
   };
 
   const { form, name, job, phone } = inputElements;
@@ -15,11 +14,9 @@ const initializeApp = () => {
 
   const handleFormFields = () => {
     let formRegisterUser = {};
+    formFields.forEach((fieldName) => (formRegisterUser[fieldName] = inputElements[fieldName].value));
     formRegisterUser["createdAt"] = inputElements["createdAt"];
-    formFields.forEach(
-      (fieldName) =>
-        (formRegisterUser[fieldName] = inputElements[fieldName].value)
-    );
+
     return formRegisterUser;
   };
 
@@ -31,51 +28,59 @@ const initializeApp = () => {
   };
 
   const checkLengthLettersInput = (input, letters, minLength, maxLength) => {
-    if (letters.length < minLength) {
+    const { length: characters } = letters;
+    if (characters < minLength) {
       input.setCustomValidity(`O nome deve ter no mínimo ${minLength} caracteres.`);
-    } else if (letters.length > maxLength) {
+    } else if (characters > maxLength) {
       input.setCustomValidity(`O nome deve ter no máximo ${maxLength} caracteres.`);
     } else {
       input.setCustomValidity("");
     }
   };
 
+  const allowOnlyLetters = (input, minLength, maxLength) => {
+    const letters = input.value.replace(/[^A-Za-zÀ-ÿ\s ]/g, "");
+    checkLengthLettersInput(input, letters, minLength, maxLength);
+
+    return (input.value = letters);
+  };
+
+  const inputValidationTypeText = (input, minLength, maxLength) => {
+    return input.addEventListener("input", () => allowOnlyLetters(input, minLength, maxLength));
+  };
+
+  inputValidationTypeText(name, 10, 50);
+  inputValidationTypeText(job, 5, 35);
+
   const handlePhoneInput = (e) => {
     const { value: number } = e.target;
     return (e.target.value = formatPhoneNumber(number));
   };
 
-  const allowOnlyLetters = (input, minLength, maxLength) => {
-    const letters = input.value.replace(/[^A-Za-zÀ-ÿ\s ]/g, "");
-    checkLengthLettersInput(input, letters, minLength, maxLength);
-    return (input.value = letters);
-  };
-
-  const inputValidationTypeText = (input, minLength, maxLength) => {
-    return input.addEventListener("input", () =>
-      allowOnlyLetters(input, minLength, maxLength)
-    );
-  };
+  phone.addEventListener("input", handlePhoneInput);
 
   const showMessageRequest = (message) => alert(message);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.table(handleFormFields());
-    showMessageRequest("Dados enviados com sucesso!");
+  const showDataRegister = () => {
+    const register = handleFormFields();
+    console.table(register);
   };
 
-  phone.addEventListener("input", handlePhoneInput);
-  inputValidationTypeText(name, 10, 50);
-  inputValidationTypeText(job, 5, 35);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    showDataRegister();
+    showMessageRequest("Dados enviados com sucesso!");
+  };
 
   form.addEventListener("submit", handleSubmit);
 };
 
-window.addEventListener("DOMContentLoaded", () => {
+const handleDOMContentLoaded = () => {
   try {
     initializeApp();
   } catch (error) {
     console.error("[error]: ", error);
   }
-});
+};
+
+window.addEventListener("DOMContentLoaded", handleDOMContentLoaded);
