@@ -86,10 +86,6 @@ const initializeApp = () => {
     return (e.target.value = letters);
   });
   
-  const clearFormAfterSubmit = () => {
-   return formFields.forEach((element) => (inputElements[element].value = ""));
-  }
-
   const handleSubmit = (e) => {
     e.preventDefault();
     showDataRegister();
