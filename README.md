@@ -1,4 +1,4 @@
-# Desafio Teste Estagiario
+# Desafio Teste Estagiário
 Repositório de teste para novos estagiários 
 
 
