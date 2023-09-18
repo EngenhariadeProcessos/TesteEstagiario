@@ -55,7 +55,7 @@ git push origin develop
  
 6. Quando finalizar tudo envie o link do seu Fork para:
    [engenhariadeprocessos@grafjb.com.br](mailto:engenhariadeprocessos@grafjb.com.br)
-7. `Atenção` para todas as etapas aqui informadas eles fazem parte do teste então devem ser seguidas e o seu entendimento e primordial.   
+7. `Atenção` para todas as etapas aqui informadas eles fazem parte do teste então devem ser seguidas, é o seu entendimento e primordial.   
 ****
 ```
 BOA SORTE
