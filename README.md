@@ -51,10 +51,11 @@ git push origin develop
 
 4. No **Github** crie um `Pull request` com a `main` do seu Fork, preste atenção para isso.  
 
-5. Você tem até 23/05/2023 às 17h para resolver. 
+5. Você tem até 20/09/2023 às 17h para resolver. 
  
 6. Quando finalizar tudo envie o link do seu Fork para:
-   [engenhariadeprocessos@grafjb.com.br](mailto:engenhariadeprocessos@grafjb.com.br) 
+   [engenhariadeprocessos@grafjb.com.br](mailto:engenhariadeprocessos@grafjb.com.br)
+7. `Atenção` para todas as etapas aqui informadas eles fazem parte do teste então devem ser seguidas e o seu entendimento e primordial.   
 ****
 ```
 BOA SORTE
