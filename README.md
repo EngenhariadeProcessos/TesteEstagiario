@@ -1,62 +1,34 @@
-# Desafio Teste Estagiário
-Repositório de teste para novos estagiários 
+Página de Teste de Estagiário
+Bem-vindo à Página de Teste de Estagiário!
 
+Esta página foi criada como parte de um projeto de teste de estágio e contém um formulário de boas-vindas e uma mensagem de agradecimento após o envio do formulário. Aqui está uma visão geral rápida da página e como usá-la.
 
-Nesta etapa do processo seletivo de novos estagiários criamos este repositório com a finalidade de testar os conhecimentos dos candidatos nas seguintes tecnologias `Git, GitHub, HTML e JavaScript` veja o passo a passo em cada: 
+Conteúdo
+Visão Geral
+Instruções de Uso
+Tecnologias Utilizadas
+Autor
+Visão Geral
+A Página de Teste de Estagiário é um projeto web simples que demonstra a criação de um formulário de boas-vindas em HTML, estilizado com CSS, e com interações JavaScript básicas. Após o envio do formulário, uma mensagem de agradecimento é exibida.
+![image](https://github.com/MariaEduardaLeal/TesteEstagiario/assets/71770176/4ec87e79-daca-4167-b07f-bf7256e4e96c)
 
-- **Git / Github**<br>
-  - Necessário ter uma conta no GitHub;
-  - Fazer um `Fork` no GitHub;
-  - Baixar o repositório em sua máquina; 
-  - Abrir em sua `IDE`;
-  - Crie uma nova branch chamada `develop`; 
-  - Executar um `commit/push` com suas alterações;  
-  - Executar um `merge` com a `main` criando `Pull request` no GitHub;
+Instruções de Uso
+Para usar a página:
 
-- **HTML**<br> 
-  Criar uma página que deve conter um formulário com os seguintes campos: 
-  - `Nome, email, telefone`;
-  - Um botão Enviar;
-  - Utilizar somente o arquivo `index.html`;
+Acesse https://mariaeduardaleal.github.io/TesteEstagiario/ em seu navegador.
 
-- **JavaScript**<br>
-  - Definir uma validação para os campos não permitindo enviar com os valores em branco;   
-  - Após clicar no botão enviar, os valores dos campos devem ser passados para um objeto do `JS`, é este deve ser exibido no console do browser;
-  - Após clicar no botão enviar, ocultar o formulário e exibir a mensagem: **`Obrigado por seu cadastro!`**
-  - Utilizar somente o arquivo `index.js` para adicionar todo o código `JS`;
+Preencha o formulário com seu nome, e-mail e número de telefone.
 
-## Dicas Importantes 
+Clique no botão "Entrar" para enviar o formulário.
 
-- Você pode utilizar Bootstrap, jQuery ou qualquer outra biblioteca de sua preferência. 
-- Saber pesquisar e encontrar soluções é válido, mas tenha a documentação oficial como sua aliada, utilize estes sites de preferência como referência: [MDN Web Docs](https://developer.mozilla.org/pt-BR/) é [W3Schools OnlineWeb Tutorials](https://www.w3schools.com/)
-- Não é necessário criar um `pull request` no repositório principal do teste, você deve fazer isso apenas na sua branch `main` do seu fork
-- Não mude ou altere o nome do repositorio do seu fork 
-- Não clone o repositório do teste e crie um novo a partir dele, o teste envolve apenas criar um fork 
+Após o envio, uma mensagem de agradecimento será exibida na página.
 
-## Comandos básicos do GIT
+Tecnologias Utilizadas
+Esta página foi desenvolvida utilizando as seguintes tecnologias:
 
-1. Crie uma branch `develop` e realize as modificações descritas acima. 
-```bash
-git checkout -b develop
-```
-2. Faça o Commit. 
-```bash
-git commit -m 'Finished Exercise '
-```
-3. Realize o Push da Branch. 
+HTML5: Utilizado para criar a estrutura da página web.
+CSS3: Utilizado para estilizar a página e torná-la visualmente atraente.
+JavaScript: Utilizado para manipular eventos do formulário e exibir a mensagem de agradecimento.
 
-```bash
-git push origin develop
-```
-
-4. No **Github** crie um `Pull request` com a `main` do seu Fork, preste atenção para isso.  
-
-5. Você tem até 20/09/2023 às 17h para resolver. 
- 
-6. Quando finalizar tudo envie o link do seu Fork para:
-   [engenhariadeprocessos@grafjb.com.br](mailto:engenhariadeprocessos@grafjb.com.br)
-7. `Atenção` para todas as etapas aqui informadas eles fazem parte do teste então devem ser seguidas, é o seu entendimento e primordial.   
-****
-```
-BOA SORTE
-```
+Autor
+Esta página foi criada por Maria Eduarda de Medeiros Leal.
