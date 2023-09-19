@@ -1,0 +1,86 @@
+/* Resetando estilos padrão para todos os elementos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o fundo da página */
+body {
+    background-image: url(./assets/gb.jpg);
+    background-position: top center;
+    background-size: cover; /* Alteração para cover */
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Restante do seu CSS */
+
+/* Estilizando a caixa branca com o formulário */
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Estilizando o título do formulário */
+h1 {
+    color: #131e31; /* Cor do texto do título */
+    margin-bottom: 2rem;
+}
+.form-control label {
+    display: block;
+    font-size: 24px;
+    margin-right:1900px ;
+    margin-bottom: 5px;
+    margin-bottom: 1rem;
+    color: #131e31 /* Cor do texto dos rótulos */
+  }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"] {
+    background-color: rgb(222, 235, 235);
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5rem;
+}
+
+input[type="submit"] {
+    background-color: #131e31;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #371c2f; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilizando a mensagem de sucesso */
+#mensagem {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #131e31;
+    margin-top: 20px; /* Margem superior para espaço */
+}
+
+#mensagem p {
+    margin-bottom: 10px; /* Margem inferior padrão para espaço entre os parágrafos */
+}
+
+
