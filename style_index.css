@@ -1,0 +1,92 @@
+/* style_index.css */
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  margin-bottom: 10%;
+}
+
+.caixa {
+  width: 300px;
+  margin-top: 15%;
+  margin-left: 40%;
+  padding: 2%;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5%;  
+  font-family: bold;
+}
+
+
+.login {
+  text-align: center;
+}
+
+
+.login input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5%;
+  margin-left: -4%;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+  background-color: #DEE3E7;
+}
+
+ul {
+  list-style-type: none;
+  padding-bottom: 2.5%;
+  text-align: left;
+}
+
+li {
+  padding-bottom: 0.5%;
+}
+
+
+#enviarBtn {
+  font-family: Arial;
+  font-size: medium;
+  padding: 1%;
+  width: 25%;
+  height: 50%;  
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5%;
+  color: white;
+
+}
+
+#enviarBtn:hover {
+  background-color: #363636;
+}
+
+.login span {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#bemVindo {
+  width: 95%;
+  height: 50%;  
+  margin-top: 10%;
+  margin-left: 0%;
+  padding: 2%;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-family: bold;
+}
+

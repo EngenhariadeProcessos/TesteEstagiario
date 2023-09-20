@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style_index.css">
+
+</head>
+
+<body>
+    <div class="caixa">        
+
+        <h1>Bem vindo</h1>
+
+        <form id="formulario" class="login" action="" method="post" onsubmit="enviar()">
+        <ul>
+            <li id="tituloArea">Nome</li>
+            <li>
+                <input type="text" name="nome" id="nome" required placeholder="Nome do usuário">
+            </li>
+            <li id="feedback">
+                <span class="feedback" id="nome-feedback"></span>
+            </li>
+        </ul>
+
+        <ul>
+            <li id="tituloArea">Email</li>
+            <li>
+                <input type="email" name="email" id="email" required placeholder="email do usuário">
+            </li>
+            <li id="feedback">
+                <span class="feedback" id="email-feedback"></span>
+            </li>
+        </ul>
+
+        <ul>
+            <li id="tituloArea">Telefone</li>
+            <li>
+                <input type="tel" name="telefone" id="telefone" required placeholder="telefone do usuário">
+            </li>
+
+            <li id="feedback">
+                <span class="feedback" id="telefone-feedback"></span>
+            </li>
+        </ul> 
+        <button type="submit" value="Enviar" id="enviarBtn">enviar</button>
+        </form>        
+                
+
+        <div id="bemVindo" style="display:none">
+            <p>Obrigado por seu cadastro!</p>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
