@@ -1,4 +1,4 @@
-# Desafio Teste Estagiario
+# Desafio Teste Estagiário
 Repositório de teste para novos estagiários 
 
 
@@ -29,6 +29,9 @@ Nesta etapa do processo seletivo de novos estagiários criamos este repositório
 
 - Você pode utilizar Bootstrap, jQuery ou qualquer outra biblioteca de sua preferência. 
 - Saber pesquisar e encontrar soluções é válido, mas tenha a documentação oficial como sua aliada, utilize estes sites de preferência como referência: [MDN Web Docs](https://developer.mozilla.org/pt-BR/) é [W3Schools OnlineWeb Tutorials](https://www.w3schools.com/)
+- Não é necessário criar um `pull request` no repositório principal do teste, você deve fazer isso apenas na sua branch `main` do seu fork
+- Não mude ou altere o nome do repositorio do seu fork 
+- Não clone o repositório do teste e crie um novo a partir dele, o teste envolve apenas criar um fork 
 
 ## Comandos básicos do GIT
 
@@ -48,10 +51,11 @@ git push origin develop
 
 4. No **Github** crie um `Pull request` com a `main` do seu Fork, preste atenção para isso.  
 
-5. Você tem até 06/01/2023 às 12h para resolver. 
+5. Você tem até 20/09/2023 às 17h para resolver. 
  
 6. Quando finalizar tudo envie o link do seu Fork para:
-   [engenhariadeprocessos@grafjb.com.br](mailto:engenhariadeprocessos@grafjb.com.br) 
+   [engenhariadeprocessos@grafjb.com.br](mailto:engenhariadeprocessos@grafjb.com.br)
+7. `Atenção` para todas as etapas aqui informadas eles fazem parte do teste então devem ser seguidas, é o seu entendimento e primordial.   
 ****
 ```
 BOA SORTE
