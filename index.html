@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <section class="register-section">
+
+        <form id="form-container" class="form-container">
+            <h1>Cadastre-se</h1>
+
+            <div class="content-form">
+                <input type="text" id="name" class="input-element" placeholder="Nome" required>
+                <span class="error-message display-none">Por favor, preencha com seu nome.</span>
+            </div>
+    
+            <div class="content-form">
+                <input type="email" id="email" class="input-element" placeholder="E-mail" required>
+                <span class="error-message display-none">Por favor, preencha com seu email.</span>
+            </div>
+            
+            <div class="content-form">
+                <input type="tel" id="phone" class="input-element" placeholder="Telefone" required>
+                <span class="error-message display-none">Por favor, preencha com seu telefone.</span>
+            </div>
+            
+            <button type="button" id="send-button">Enviar</button>
+        </form>
+    
+        <div id="complete-area" class="submit-complete display-none">
+            <h2>Obrigado por seu cadastro!</h2>
+        </div>
+    </section>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+@font-face {
+    font-family: inter;
+    src: url("../fonts/Inter/static/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: mooli;
+    src: url("../fonts/Mooli/Mooli-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e5e7eb;
+    font-family: inter, 'Times New Roman', Times, serif;
+}
+
+.register-section {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 1500px;
+}
+
+.form-container {
+    display: flex;
+    background: rgb(186,204,164);
+    background: linear-gradient(90deg, rgba(186,204,164,1) 0%, rgba(125,173,147,1) 100%);
+    flex-direction: column;
+    padding: 2rem;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    gap: 2.4rem;
+    -webkit-box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2b2726;
+    font-family: mooli;
+}
+
+.content-form {
+    display: flex;
+    flex-direction: column;
+    color: #2b2726;
+    height: 40px;
+}
+
+.input-element {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    transition: 0.2s;
+}
+
+.input-element:hover, .input-element:focus {
+    border-bottom: 2px solid #018790;
+}
+
+#send-button {
+    width: 100%;
+    background-color: #018790;
+    color: #e5e7eb;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.input-element::placeholder {
+    color: #2b2726;
+}
+
+.input-element:focus {
+    outline: none;
+    
+}
+
+.error-message {
+    font-size: 0.8rem;
+    color: #e61c23;
+    margin-top: 0.2rem;
+}
+
+.display-none {
+    display: none;
+}
+
+img {
+    color: #e61c23;
+    width: 300px;
+    position: absolute;
+    right: 200px;
+    top: 300px;
+}
+
+
+h2 {
+    font-family: mooli;
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .register-section{
+        width: 100%;
+    }
+
+    .form-container {
+        width: 70%;
+    }
+}
