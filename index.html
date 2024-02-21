@@ -32,7 +32,7 @@
     <div class="container">
         <div class="card p-4 mt-5">
             <div class="card-body">
-                <form onsubmit="Enviar()" method="POST">
+                <form onsubmit="EnviarDados()" method="POST">
                     <h2 class="card-title mb-4 text-center">Bem vindo</h2>
                     <div class="mb-3 input-group">
                         <span class="input-group-text">
@@ -62,18 +62,15 @@
                         <button type="submit" value="Entrar" class="btn btn-custom-color px-5 py-2 mt-3">Entrar</button>
                     </div>
                 </form>
+
+                <div id="mensagem" class="card-body card p-4 mt-5 text-center" style="display: none;">
+                    <p>Obrigado por seu cadastro!</p>
+                    <p>Seus Dados: </p>
+                    <p>Nome: </p>
+                    <p>Email: </p>
+                    <p>Telefone: </p>
+                </div>
             </div>
-        </div>
-    </div>
-
-
-    <div id="mensagem" class="card p-4 mt-5 text-center" style="display: none;">
-        <div class="card-body" id="mensagem">
-            <p>Obrigado por seu cadastro!</p>
-            <p>Seus Dados: </p>
-            <p>Nome: </p>
-            <p>Email: </p>
-            <p>Telefone: </p>
         </div>
     </div>
 

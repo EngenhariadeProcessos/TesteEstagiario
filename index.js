@@ -1,4 +1,4 @@
-function Enviar() {
+function EnviarDados() {
     // Captura os elementos do formulário e da mensagem por meio de seus IDs.
     const formulario = document.querySelector('form');
     const mensagem = document.getElementById('mensagem');
@@ -12,14 +12,14 @@ function Enviar() {
     const telefone = telefoneInput.value;
 
     // Cria um objeto com os dados do usuário.
-    const dados = {
+    const dadosUsuario = {
         Nome: nome,
         Email: email,
         Telefone: telefone
     };
 
     // Exibe o objeto no console.
-    console.log(dados);
+    console.log(dadosUsuario);
   
     // Exibe a mensagem de boas-vindas.
     mensagem.style.display = 'block';
