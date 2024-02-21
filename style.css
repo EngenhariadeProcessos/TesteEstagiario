@@ -1,0 +1,36 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #535DA1;
+}
+
+.navbar h1 {
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio_text {
+    color: #000;
+}
+
+.btn-custom-color {
+    background-color: #6E2CF3;
+    color: #fff;
+}
+
+.btn-custom-color:hover {
+    background-color: #4000c0;
+    color: #fff;
+}
+
+.no-hover-color:hover {
+    color: #fff;
+    text-decoration: none;
+}
