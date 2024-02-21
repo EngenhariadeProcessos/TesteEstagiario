@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icones de fontawesome -->
+    <script src="https://kit.fontawesome.com/f2c34800e3.js" crossorigin="anonymous"></script>
+    
+    <title>Teste Estágio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card_form">
+            <form action="" onsubmit="EnviarDados()" id="form" method="POST">
+                <h1>Bem vindo</h1>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="nome" placeholder="Nome do usuário" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email do usuário" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" id="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
+                        placeholder="(00) 0000-0000" required>
+                </div>
+                <div class="form_button">
+                    <button type="submit" value="Enviar">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="card_mensagem" id="message" style="display: none;">
+            <div class="info_mensagem">
+                <h2>Obrigado por seu cadastro!</h2>
+                <p>Nome: </p>
+                <p>Email: </p>
+                <p>Telefone: </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
