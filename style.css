@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --green: rgb(21,126,109);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +15,102 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Inter", "sans-serif";
+    /* background-image: url("paper.gif"); */
+    background: rgb(21,126,109);
+background: linear-gradient(36deg, rgba(21,126,109,1) 0%, rgba(69,185,147,1) 35%, rgba(157,225,176,1) 100%);
 }
 
-main {
+/* main {
     border: solid black 1px;
     border-radius: 1rem;
     padding: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+} */
+
+h2 {
+    font-weight: bold;
+}
+
+p {
+    font-weight: light;
+}
+
+.sign-in {
+    padding: 2rem;
+    height: 60%;
+    background-color: rgb(46, 212, 151);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem 0 0 1rem;
+    color: white;
+}
+
+.sign-in-button {
+    background: none;
+    border-radius: 4rem;
+    padding: 0.5rem;
+    font-family: "Inter";
+    color: white;
+    border: solid white 3px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.sign-in-button:hover {
+    transition: 1s;
+    background-color: white;
+    color: rgb(46, 212, 151);
+}
+
+.register-form {
+    background-color: white;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.register-header {
+    height: 30%;
+}
+
+form {
+    /* width: 100%; */
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#submit-button {
+    background: var(--green);
+    border-radius: 4rem;
+    padding: 0.6rem;
+    font-family: "Inter";
+    color: white;
+    border: none;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+input {
+    padding: 0.3rem;
+    border: solid var(--green) 1px;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#signin-link {
+    color: white;
 }
