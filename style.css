@@ -16,19 +16,16 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Inter", "sans-serif";
-    /* background-image: url("paper.gif"); */
     background: rgb(21,126,109);
 background: linear-gradient(36deg, rgba(21,126,109,1) 0%, rgba(69,185,147,1) 35%, rgba(157,225,176,1) 100%);
 }
 
-/* main {
-    border: solid black 1px;
-    border-radius: 1rem;
-    padding: 2rem;
+main {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
+    margin: 4rem;
+    align-items: center;
+    justify-content: center;
+}
 
 h2 {
     font-weight: bold;
@@ -41,13 +38,14 @@ p {
 .sign-in {
     padding: 2rem;
     height: 60%;
-    background-color: rgb(46, 212, 151);
+    background-color: rgb(57, 207, 152);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 1rem 0 0 1rem;
     color: white;
+    margin-left: 4rem;
 }
 
 .sign-in-button {
@@ -76,10 +74,7 @@ p {
     justify-content: center;
     padding: 12rem;
     border-radius: 0 1rem 1rem 0;
-}
-
-.register-header {
-    height: 30%;
+    margin-right: 4rem;
 }
 
 form {
@@ -104,13 +99,52 @@ form {
     padding-right: 5rem;
 }
 
-input {
-    padding: 0.3rem;
-    border: solid var(--green) 1px;
-    border-radius: 1rem;
-    text-align: center;
-}
-
 #signin-link {
     color: white;
+}
+
+
+.register-header {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.sign-in-icons {
+    height: 2rem;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 920px) {
+   body {
+    flex-direction: column;
+   }
+   .sign-in {
+    margin-top: 4rem;
+    width: 80%;
+    height: 15rem;
+    border-radius: 1rem 1rem 0 0;
+    margin-left: 0;
+   }
+
+   .register-form {
+    margin-right: 0;
+    border-radius: 0 0 1rem 1rem;
+    width: 80%;
+   }
+   .register-header {
+    margin-top: -7rem;
+    padding: 2rem;
+    width: 100%;
+   }
 }

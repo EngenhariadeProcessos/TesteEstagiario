@@ -22,19 +22,25 @@
         </div>
         <div class="register-form">
             <div class="register-header">
-                
-                <!-- 
-                    Aqui ficariam os ícones de registrar com Google, Facebook ou Linkedin.
-                -->
+                <div class="register-title">
+                    <h2 id="create-account">Registre-se</h2>
+                </div> 
+                <div class="icons">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" class="sign-in-icons">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/2048px-2023_Facebook_icon.svg.png" class="sign-in-icons">
+                    <img src="https://static-00.iconduck.com/assets.00/linkedin-icon-1024x1024-net2o24e.png" class="sign-in-icons">
+                </div>
+                <p>ou</p>
             </div>
-            <form>
-                <img src="https://www.grafjb.com.br/_shared/autores/aut25082021160111.png" style="height: 5rem;">
-                <h2 id="create-account">Registre-se</h2>
-                <input type="text" name="nome-input" placeholder="Nome">
-                <input type="email" name="email-input" placeholder="Email">
-                <input type="tel" name="telefone-input" placeholder="Telefone">
+            <form id="form">
+                <input type="text" name="nome-input" placeholder="Nome" class="form-control" required oninput="validarNome()">
+                    <!-- <span id="spans">Digite um nome com pelo menos 8 caracteres.</span> -->
+                <input type="email" name="email-input" placeholder="Email" class="form-control" required>
+                <input type="tel" name="telefone-input" placeholder="Telefone" class="form-control" required>
                 <input type="submit" value="Enviar" id="submit-button">
             </form>
         </div> 
+        
+        <script src="index.js"></script>
 </body>
 </html>
