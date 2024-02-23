@@ -134,7 +134,7 @@ form {
     flex-direction: column;
    }
    .sign-in {
-    margin-top: 4rem;
+    margin-top: 0;
     width: 80%;
     height: 15rem;
     border-radius: 1rem 1rem 0 0;
