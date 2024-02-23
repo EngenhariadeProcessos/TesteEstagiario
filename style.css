@@ -17,17 +17,10 @@ body {
     justify-content: center;
     font-family: "Inter", "sans-serif";
     background: rgb(21,126,109);
-background: linear-gradient(36deg, rgba(21,126,109,1) 0%, rgba(69,185,147,1) 35%, rgba(157,225,176,1) 100%);
+    background: linear-gradient(36deg, rgba(21,126,109,1) 0%, rgba(69,185,147,1) 35%, rgba(157,225,176,1) 100%);
 }
 
-main {
-    display: flex;
-    margin: 4rem;
-    align-items: center;
-    justify-content: center;
-}
-
-h2 {
+.register-title h2 {
     font-weight: bold;
 }
 
@@ -46,6 +39,7 @@ p {
     border-radius: 1rem 0 0 1rem;
     color: white;
     margin-left: 4rem;
+    visibility: visible;
 }
 
 .sign-in-button {
@@ -75,6 +69,7 @@ p {
     padding: 7rem 6rem 7rem 6rem;
     border-radius: 0 1rem 1rem 0;
     margin-right: 4rem;
+    visibility: visible;
 }
 
 form {
@@ -95,8 +90,8 @@ form {
     font-family: "Inter";
     color: white;
     border: none;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 #signin-link {
@@ -125,16 +120,37 @@ form {
     justify-content: center;
 }
 
-.form-control {
+.form-content input {
     width: 100%;
+    border-radius: 30px;
+    padding: 4px;
+    padding-left: 15px;
+    border: solid 1px var(--green);
+    font-family: 'Inter', 'comic-sans';
 }
-
+.form-content input::placeholder {
+    padding-left: 10px;
+    font-family: 'Inter', 'comic-sans';
+}
+.submit-container {
+    visibility: hidden;
+    color: white;
+    background-color: var(--green);
+    padding: 4rem;
+    border-radius: 1rem;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
 @media(max-width: 920px) {
    body {
     flex-direction: column;
    }
    .sign-in {
-    margin-top: 0;
+    margin-top: 5rem;
     width: 80%;
     height: 15rem;
     border-radius: 1rem 1rem 0 0;
