@@ -3,18 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulary</title>
+    <title>Formulário</title>
+    <style>
+      #mensagem {
+        display: none;
+      }
+    </style>
   </head>
   <body>
-    <form>
+    <h2>Formulário de Cadastro</h2>
+    <form id="form">
       <label for="name">Nome:</label>
-      <input type="text" id=" name" name="user_name" />
+      <input type="text" id="name" name="name" /><br />
       <label for="email">Email:</label>
-      <input type="text" id=" email" email="user_email" />
+      <input type="email" id="email" name="email" /><br />
       <label for="phone">Telefone:</label>
-      <input type="text" id=" phone" phone="user_phone" />
-      <button type="button">Enviar</button>
+      <input type="text" id="phone" name="phone" /><br />
+
+      <button type="button" id="submitButton">Enviar</button>
     </form>
+
+    <div id="mensagem">Obrigado por seu cadastro!</div>
+
     <script src="index.js"></script>
   </body>
 </html>
