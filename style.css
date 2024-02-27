@@ -32,39 +32,36 @@ body {
 }
 
 .form-control {
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    position: relative;
-    padding: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  padding: 10px;
 }
 .form-control label {
-    display: inline-block;
-    margin-bottom: 5px;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 .form-control input {
-    border: 2px solid #f0f0f0;
-    display: block;
-    border-radius: 10px;
-    font-size: 14px;
-    width: 100%;
-    padding: 10px;
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
 }
 button {
-    background-color: #fc00fc;
-    border: 2px solid;
-    color: #fff;
-    font-size: 14px;
-    width: 100%;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 5px;
-
+  background-color: #fc00fc;
+  border: 2px solid;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
 }
 
 #mensagem {
-    display: none;
-    font-size: 20px;
-    padding: 10px;
-    
-    
+  display: none;
+  font-size: 20px;
+  padding: 10px;
 }
