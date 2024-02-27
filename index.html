@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Formulário</title>
     <style>
       #mensagem {
@@ -11,16 +18,22 @@
     </style>
   </head>
   <body>
-    <h2>Formulário de Cadastro</h2>
-    <form id="form">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" /><br />
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" /><br />
-      <label for="phone">Telefone:</label>
-      <input type="text" id="phone" name="phone" /><br />
+    <div class="container">
+        <div class="header">
+            <h2>Formulário de Cadastro</h2>
+        </div>
+            <form id="form">
+                <div class="form-control">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome completo" /><br />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu melhor email"/><br />
+                    <label for="phone">Telefone:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Digite seu telefone para contato"/><br />
+                </div>
 
-      <button type="button" id="submitButton">Enviar</button>
+        <button type="button" id="submitButton">Enviar</button>
+        </div>
     </form>
 
     <div id="mensagem">Obrigado por seu cadastro!</div>
