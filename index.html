@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Teste Estagiário</title>
+  </head>
+  <body
+    class="bg-gray-100 h-screen p-2 flex items-center justify-center"
+    id="body"
+  >
+    <div
+      class="bg-white flex flex-col p-2 rounded-md shadow-md justify-center items-center w-96 h-96 gap-2"
+      id="formContainer"
+    >
+      <h1 class="text-xl font-bold">Teste Estagiário</h1>
+      <!-- Input Nome -->
+      <section class="flex flex-col">
+        <label for="inputName" class="font-bold text-slate-700">Nome:</label>
+        <input
+          type="text"
+          id="inputName"
+          placeholder="Ex.: John Doe"
+          class="border border-gray-500 rounded-md w-72 h-8 p-2"
+        />
+      </section>
+      <!-- Input Email -->
+      <section class="flex flex-col">
+        <label for="inputEmail" class="font-bold text-slate-700">Email:</label>
+        <input
+          type="email"
+          id="inputEmail"
+          placeholder="Ex.: email@dominio.com"
+          class="border border-gray-500 rounded-md w-72 h-8 p-2"
+        />
+      </section>
+      <!-- Input Telefone -->
+      <section class="flex flex-col">
+        <label for="inputPhone" class="font-bold text-slate-700"
+          >Telefone:</label
+        >
+        <input
+          type="text"
+          id="inputPhone"
+          placeholder="Ex.: (83) 987654321"
+          class="border border-gray-500 rounded-md w-72 h-8 p-2"
+        />
+      </section>
+      <button
+        type="submit"
+        class="bg-blue-700 w-72 rounded-md h-8 mt-2 shadow-md text-white font-bold hover:bg-blue-800 transition duration-300 ease-in-out"
+        id="submitButton"
+      >
+        Enviar
+      </button>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
