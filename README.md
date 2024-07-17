@@ -10,8 +10,8 @@ Nesta etapa do processo seletivo de novos estagiários criamos este repositório
   - Baixar o repositório em sua máquina; 
   - Abrir em sua `IDE`;
   - Crie uma nova branch chamada `develop`; 
-  - Executar um `commit/push` com suas alterações;  
-  - Executar um `merge` com a `main` criando `Pull request` no GitHub;
+  - Ao finalizar o projeto executar um `commit/push` com suas alterações;  
+  - Faça um `merge` com a `main` criando `Pull request` no GitHub ( antenção para isso, deve ser no seu Fork );
 
 - **HTML**<br> 
   Criar uma página que deve conter um formulário com os seguintes campos: 
