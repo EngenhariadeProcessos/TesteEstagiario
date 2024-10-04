@@ -10,6 +10,6 @@ const email = document.querySelector('#email').value;
 
 const dados = { nome, idade, email};
 
-
+console.log(dados);
 
 });
