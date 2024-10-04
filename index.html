@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Teste De Estágio</title>
+    <style>
+        body{
+            font-family: 'roboto', sans-serif;
+        }
+    </style>
+</head>
+  <body>
+    <main class="container mt-5">
+      <header>
+        <h2>Cadastro Do Estagiário.</h2>
+      </header>
+      <section id="formSection">
+        <form id="formTest">
+          <!-- Campo de Texto -->
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" name="nome" />
+          </div>
+
+          <!-- Campo de Email -->
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" name="email" />
+          </div>
+
+          <!-- Campo de Telefone -->
+          <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="text" class="form-control" id="telefone" name="telefone" />
+          </div>
+
+          <!-- Campo Submit -->
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </section>
+
+      <!-- estilo para aparecer após o envio da mensagem -->
+      <section id="mensagem" class="alert alert-sucess mt-3" style="display: none"></section>
+    </main>
+
+    <script src="index.js"></script>
+   
+  </body>
+</html>
