@@ -14,4 +14,7 @@ console.log(dados);
 
 form.reset();
 
+form.style.display = 'none';
+window.alert('Formulário enviado com sucesso!');oculta o 
+
 });
