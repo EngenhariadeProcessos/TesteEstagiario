@@ -49,7 +49,7 @@ git commit -m 'Finished Exercise '
 git push origin develop
 ```
 
-4. No **Github** crie um `Pull request` com a `main` do seu Fork, preste atenção para isso.  
+4. No **Github** crie um `Pull request` com a `main` do seu Fork, preste atenção para isso, e confirme o `Pull Request` na sua `main` lembre-se o `merge` deve ser na sua `main` do seu `Fork`.  
 
 5. Você tem até 04/10/2024 às 12h para resolver. 
  
