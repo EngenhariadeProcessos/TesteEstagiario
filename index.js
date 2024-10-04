@@ -12,4 +12,6 @@ const dados = { nome, idade, email};
 
 console.log(dados);
 
+form.reset();
+
 });
