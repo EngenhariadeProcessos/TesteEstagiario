@@ -1,0 +1,75 @@
+body {
+    background-image: url('https://www.grafjb.com.br/_shared/destaques/big_des28072024182402.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Aumenta a opacidade para melhorar o contraste */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Sombra mais forte para destaque */
+    max-width: 500px; 
+    width: 100%; 
+    margin: 30px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona animação */
+}
+
+.form-container:hover {
+    transform: scale(1.02); /* Efeito de hover para dar vida ao formulário */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    width: 180px; 
+    height: auto; 
+    z-index: 1000; 
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3)); /* Sombra para o logotipo */
+}
+
+.titulo-negrito {
+    font-weight: bold; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #333; 
+    margin-bottom: 30px; /* Mais espaço abaixo do título */
+}
+
+.form-group {
+    margin-bottom: 25px; /* Aumenta o espaçamento entre os campos */
+    font-weight: bold;
+}
+
+input {
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona um pouco mais de sombra */
+    transition: all 0.3s ease; /* Animação suave ao focar */
+}
+
+input:focus {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Efeito ao focar */
+    border-color: #4285f4; /* Azul para borda ao focar */
+}
+
+button {
+    background-color: #4285f4;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+button:hover {
+    background-color: #357ae8; /* Escurece o botão ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
