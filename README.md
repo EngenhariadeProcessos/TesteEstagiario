@@ -11,7 +11,7 @@ Nesta etapa do processo seletivo de novos estagiários criamos este repositório
   - Abrir em sua `IDE`;
   - Crie uma nova branch chamada `develop`; 
   - Ao finalizar o projeto executar um `commit/push` com suas alterações;  
-  - Faça um `merge` com a `main` criando `Pull request` no GitHub ( antenção para isso, deve ser no seu Fork );
+  - Faça um `merge` com a `main` criando `Pull request` no GitHub ( ATENÇÃO para isso, deve ser no seu Fork, não gere pull request na main do projeto principal );
 
 - **HTML**<br> 
   Criar uma página que deve conter um formulário com os seguintes campos: 
@@ -50,8 +50,8 @@ git push origin develop
 ```
 
 4. No **Github** crie um `Pull request` com a `main` do seu Fork, preste atenção para isso, e confirme o `Pull Request` na sua `main` lembre-se o `merge` deve ser na sua `main` do seu `Fork`.  
-
-5. Você tem até 04/10/2024 às 12h para resolver. 
+Atenção quando criar um `Pull request` ele deve ser para a `main` do seu `fork`. 
+5. Você tem até 29/11/2024 às 12h para resolver. 
  
 6. Quando finalizar tudo envie o link do seu Fork para:
    [engenhariadeprocessos@grafjb.com.br](mailto:engenhariadeprocessos@grafjb.com.br)
