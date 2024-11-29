@@ -51,7 +51,7 @@ git push origin develop
 
 4. No **Github** crie um `Pull request` com a `main` do seu Fork, preste atenção para isso, e confirme o `Pull Request` na sua `main` lembre-se o `merge` deve ser na sua `main` do seu `Fork`.  
 Atenção quando criar um `Pull request` ele deve ser para a `main` do seu `fork`. 
-5. Você tem até 29/11/2024 às 12h para resolver. 
+5. Você tem até 20/12/2024 às 12h para resolver. 
  
 6. Quando finalizar tudo envie o link do seu Fork para:
    [engenhariadeprocessos@grafjb.com.br](mailto:engenhariadeprocessos@grafjb.com.br)
