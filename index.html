@@ -1,0 +1,105 @@
+<!DOCTYPE html>              <!--  Declara que este é um documento HTML5 -->
+<html lang="pt-BR">          <!-- Define o início do documento HTML e o idioma PT-BR -->
+<head>                       <!-- Início da seção head, que contém metadados e configurações da página. -->
+  <meta charset="UTF-8">     <!-- Define a codificação de caracteres como UTF-8 (suporta acentos e caracteres especiais).-->
+  <title>Formulário de Cadastro</title>    <!--  Basicamente define o título da página, (APARECE NA ABA DO NAVEGADOR). --> 
+  <style>  
+    body { 
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      min-height: 100vh;
+      margin: 0;
+      background-color: white;
+    }  
+    
+    .container {
+      background-color: white;
+      background-image: url('https://www.grafjb.com.br/_shared/autores/aut25082021160111.png');
+      background-size: cover;
+      background-position: center;
+      padding: 100px;
+      border-radius: 2000px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      
+    }
+    
+    h1 {
+      text-align: center;
+      color: black;
+      margin-bottom: 20px;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      margin-bottom: 15px;
+    }
+    
+    input {
+      padding: 8px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 4px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+    
+    #mensagem {
+      text-align: center;
+      margin-top: 20px;
+      color: black;
+    } 
+  </style>    
+
+</head>
+<body>
+  <div class="container">
+    <h1>Formulário de Cadastro</h1>
+    
+    <form id="cadastroForm">
+      <label>
+        Nome:
+        <input type="text" id="nome" required>
+      </label>
+      
+      <label>
+        Email:
+        <input type="email" id="email" required>
+      </label>
+      
+      <label>
+        Telefone:
+        <input type="tel" id="telefone">
+      </label>
+      
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="mensagem" style="display: none;">
+      <h2>Obrigado por seu cadastro!</h2>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
