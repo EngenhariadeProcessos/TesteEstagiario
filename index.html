@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script defer src="/index.js"></script>
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center text-info-emphasis" style="height: 80vh;">
+        <form class="container w-25 h-auto bg-primary-subtle mt-25 rounded border border-primary">
+            <div class="mb-3 mt-3 d-flex justify-content-center">
+                <h3 class="fw-bold">
+                    Formulário
+                </h3>
+            </div>
+            <div class="mb-3">
+                <label for="nameInput" class="form-label fw-bold">Digite seu nome:</label>
+                <input type="text" class="form-control" id="nameInput" required>
+            </div>
+            <div class="mb-3">
+              <label for="emailInput" class="form-label fw-bold">Endereço de e-mail:</label>
+              <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-3">
+              <label for="passwordInput" class="form-label fw-bold">Senha:</label>
+              <input type="password" class="form-control" id="passwordInput" required>
+            </div>
+            <div class="mb-3 d-flex justify-content-center">
+                <button type="submit" class="btn btn-success fw-bold">Enviar</button>
+            </div>
+        </form>
+        <div id="message" style="display: none;" class="justify-content-center">
+            <h3 class="mb-3">Obrigado por seu cadastro!</h3>
+        </div>
+    </div>
+    
+</body>
+</html>
