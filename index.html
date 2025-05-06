@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Teste Estagiário</title>
+    <script src="js/index.js" defer> </script>
+    <style>
+        *{
+            font-family: Helvetica;
+            box-sizing: border-box;
+        }
+        
+        body{
+            padding: 1rem;
+        }
+        
+        h1{
+            text-align: center;
+            color: #031d53;
+        
+        }
+        
+        form{
+            display: flex;
+            color: #031d53;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 500px;
+            margin: 0 auto;
+        }
+        
+        label{
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        input, select, textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+
+        button{
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #031d53;
+            color: #fff;
+            font-size: 1.1rem;
+            cursor: pointer;
+            }
+            .hidden {
+                display: none;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Formulário</h1>
+        <form id="form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+
+            <label for="telefone">Telefone:</label>
+            <input type="telefone" id="telefone">
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p id="mensagem" class="hidden">Obrigado por seu cadastro!</p>
+        
+    </div>
+</body>
+</html>
